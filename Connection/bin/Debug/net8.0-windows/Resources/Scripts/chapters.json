@@ -1,0 +1,17 @@
+[
+  {
+    "chapterNumber": 1,
+    "title": "프롤로그",
+    "episodes": [
+      {
+        "episodeNumber": 1,
+        "title": "시작",
+        "scriptFile": "Chapter1_Episode1.json",
+        "isUnlocked": true,
+        "isCompleted": false,
+        "requiredResources": []
+      }
+    ],
+    "isUnlocked": true
+  }
+]

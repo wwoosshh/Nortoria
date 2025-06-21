@@ -1,0 +1,7 @@
+C:\Users\user\Desktop\새 폴더 (3)\커넥션\Connection.exe
+C:\Users\user\Desktop\새 폴더 (3)\커넥션\Connection.dll
+C:\Users\user\Desktop\새 폴더 (3)\커넥션\Connection.deps.json
+C:\Users\user\Desktop\새 폴더 (3)\커넥션\Connection.runtimeconfig.json
+C:\Users\user\Desktop\새 폴더 (3)\커넥션\Connection.pdb
+C:\Users\user\Desktop\새 폴더 (3)\커넥션\CommunityToolkit.Mvvm.dll
+C:\Users\user\Desktop\새 폴더 (3)\커넥션\Newtonsoft.Json.dll
