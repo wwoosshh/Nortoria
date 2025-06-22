@@ -287,32 +287,35 @@
                 </ScrollViewer>
             </TabItem>
 
-            <!-- 기타 탭 -->
+            <!-- 기타 탭 - 수정된 버전 -->
             <TabItem Header="{Binding MiscTabText}">
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
                     <StackPanel Margin="20" Background="#34495E">
 
                         <TextBlock Text="{Binding GameInfoText}" Style="{StaticResource SettingHeaderStyle}"/>
                         <TextBlock Text="Connection v1.0.0" Foreground="White" Margin="0,5"/>
+
+                        <!-- 방법 1: OneWay 바인딩 명시 -->
                         <TextBlock Foreground="White" Margin="0,5">
-                            <Run Text="{Binding DeveloperText}"/>
-                            <Run Text=": Connection Team"/>
+                <Run Text="{Binding DeveloperText, Mode=OneWay}"/>
+                <Run Text=": Connection Team"/>
                         </TextBlock>
                         <TextBlock Foreground="White" Margin="0,5">
-                            <Run Text="{Binding EngineText}"/>
-                            <Run Text=": WPF (.NET)"/>
+                <Run Text="{Binding EngineText, Mode=OneWay}"/>
+                <Run Text=": WPF (.NET)"/>
                         </TextBlock>
+
 
                         <TextBlock Text="{Binding CopyrightInfoText}" Style="{StaticResource SettingHeaderStyle}"/>
                         <TextBlock Text="© 2025 Connection Team. All rights reserved." 
-                                   Foreground="White" 
-                                   TextWrapping="Wrap" 
-                                   Margin="0,5"/>
+                       Foreground="White" 
+                       TextWrapping="Wrap" 
+                       Margin="0,5"/>
 
                         <Button Content="{Binding ResetToDefaultText}" 
-                                Command="{Binding ResetToDefaultCommand}"
-                                Style="{StaticResource SettingControlStyle}"
-                                Margin="0,30,0,0"/>
+                    Command="{Binding ResetToDefaultCommand}"
+                    Style="{StaticResource SettingControlStyle}"
+                    Margin="0,30,0,0"/>
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>

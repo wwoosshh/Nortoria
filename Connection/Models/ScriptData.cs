@@ -47,8 +47,13 @@ namespace Connection.Models
         [JsonProperty("choices")]
         public List<Choice> Choices { get; set; } = new List<Choice>();
 
+        // 새로운 시스템: 조건부 실행
         [JsonProperty("conditions")]
-        public List<string> Conditions { get; set; } = new List<string>();
+        public List<ScriptCondition> Conditions { get; set; } = new List<ScriptCondition>();
+
+        // 새로운 시스템: 스크립트 효과
+        [JsonProperty("effects")]
+        public List<ScriptEffect> Effects { get; set; } = new List<ScriptEffect>();
     }
 
     public class Choice
@@ -60,7 +65,53 @@ namespace Connection.Models
         public int NextScriptIndex { get; set; }
 
         [JsonProperty("conditions")]
-        public List<string> Conditions { get; set; } = new List<string>();
+        public List<ScriptCondition> Conditions { get; set; } = new List<ScriptCondition>();
+
+        // 선택지 효과
+        [JsonProperty("effects")]
+        public List<ScriptEffect> Effects { get; set; } = new List<ScriptEffect>();
+    }
+
+    /// <summary>
+    /// 스크립트 조건 (플래그 기반)
+    /// </summary>
+    public class ScriptCondition
+    {
+        [JsonProperty("type")]
+        public string Type { get; set; } // "flag", "item", "relationship"
+
+        [JsonProperty("target")]
+        public string Target { get; set; } // 플래그명, 아이템ID, 캐릭터ID
+
+        [JsonProperty("operator")]
+        public string Operator { get; set; } // "equals", "greater", "less", "has"
+
+        [JsonProperty("value")]
+        public string Value { get; set; } // 비교값
+    }
+
+    /// <summary>
+    /// 스크립트 효과 (데이터 변경)
+    /// </summary>
+    public class ScriptEffect
+    {
+        [JsonProperty("type")]
+        public string Type { get; set; } // "item", "currency", "flag", "relationship"
+
+        [JsonProperty("action")]
+        public string Action { get; set; } // "give", "take", "set"
+
+        [JsonProperty("target")]
+        public string Target { get; set; } // 아이템 ID, 플래그 이름 등
+
+        [JsonProperty("amount")]
+        public int Amount { get; set; } = 1;
+
+        [JsonProperty("message")]
+        public Dictionary<Language, string> Message { get; set; } = new Dictionary<Language, string>();
+
+        [JsonProperty("silent")]
+        public bool Silent { get; set; } = false;
     }
 
     public enum ScriptType

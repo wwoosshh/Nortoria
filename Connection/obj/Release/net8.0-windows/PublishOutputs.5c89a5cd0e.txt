@@ -1,4 +1,6 @@
 C:\Users\user\Desktop\새 폴더 (3)\커넥션\Connection.exe
+C:\Users\user\Desktop\새 폴더 (3)\커넥션\Resources\Scripts\Chapter1_Episode1.json
+C:\Users\user\Desktop\새 폴더 (3)\커넥션\Resources\Scripts\chapters.json
 C:\Users\user\Desktop\새 폴더 (3)\커넥션\Connection.dll
 C:\Users\user\Desktop\새 폴더 (3)\커넥션\Connection.deps.json
 C:\Users\user\Desktop\새 폴더 (3)\커넥션\Connection.runtimeconfig.json

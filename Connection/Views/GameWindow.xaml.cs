@@ -29,5 +29,17 @@ namespace Connection.Views
         {
             await _viewModel.HandleKeyInputAsync(e.Key);
         }
+
+        private async void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            // 포커스 설정
+            Focus();
+        }
+
+        private async void ClickArea_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            // 대화 진행
+            await _viewModel.AdvanceTextCommand.ExecuteAsync(null);
+        }
     }
 }

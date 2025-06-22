@@ -9,44 +9,161 @@
         Width="819"
         WindowStartupLocation="CenterScreen"
         KeyDown="Window_KeyDown"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
         Background="Black"
         Focusable="True">
 
     <Window.Resources>
         <!-- 대화창 스타일 -->
         <Style x:Key="DialogueBoxStyle" TargetType="Border">
-            <Setter Property="Background" Value="#80000000"/>
-            <Setter Property="CornerRadius" Value="10"/>
-            <Setter Property="Padding" Value="20"/>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" Opacity="0.9">
+                        <GradientStop Color="#80000000" Offset="0"/>
+                        <GradientStop Color="#A0000000" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="CornerRadius" Value="15"/>
+            <Setter Property="Padding" Value="25"/>
             <Setter Property="Margin" Value="50,0,50,50"/>
+            <Setter Property="BorderBrush" Value="#40FFFFFF"/>
+            <Setter Property="BorderThickness" Value="1"/>
         </Style>
 
         <!-- 스피커 이름 스타일 -->
         <Style x:Key="SpeakerNameStyle" TargetType="TextBlock">
-            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontSize" Value="20"/>
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Foreground" Value="#3498DB"/>
-            <Setter Property="Margin" Value="0,0,0,10"/>
+            <Setter Property="Margin" Value="0,0,0,15"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="Black" BlurRadius="3" ShadowDepth="1" Opacity="0.7"/>
+                </Setter.Value>
+            </Setter>
         </Style>
 
         <!-- 대화 텍스트 스타일 -->
         <Style x:Key="DialogueTextStyle" TargetType="TextBlock">
-            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontSize" Value="18"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="TextWrapping" Value="Wrap"/>
-            <Setter Property="LineHeight" Value="24"/>
+            <Setter Property="LineHeight" Value="28"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="Black" BlurRadius="2" ShadowDepth="1" Opacity="0.8"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- 계속 표시 스타일 -->
+        <Style x:Key="ContinuePromptStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#BDC3C7"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="Margin" Value="0,15,0,0"/>
+            <Setter Property="Opacity" Value="0.8"/>
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard RepeatBehavior="Forever">
+                            <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                           From="0.3" To="1.0" Duration="0:0:1"
+                                           AutoReverse="True"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- 선택지 버튼 스타일 -->
+        <Style x:Key="ChoiceButtonStyle" TargetType="Button">
+            <Setter Property="MinWidth" Value="200"/>
+            <Setter Property="MaxWidth" Value="600"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Padding" Value="20,10"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="Background" Value="#2C3E50"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="#34495E"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="8">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                            Margin="{TemplateBinding Padding}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#34495E"/>
+                                <Setter Property="BorderBrush" Value="#3498DB"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#1ABC9C"/>
+                                <Setter Property="BorderBrush" Value="#16A085"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
         </Style>
 
         <!-- 메뉴 버튼 스타일 -->
         <Style x:Key="MenuButtonStyle" TargetType="Button">
-            <Setter Property="Width" Value="200"/>
-            <Setter Property="Height" Value="40"/>
-            <Setter Property="Margin" Value="0,5"/>
-            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Width" Value="250"/>
+            <Setter Property="Height" Value="45"/>
+            <Setter Property="Margin" Value="0,8"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Medium"/>
             <Setter Property="Background" Value="#2C3E50"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="BorderBrush" Value="#34495E"/>
             <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#34495E"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#1ABC9C"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- UI 오버레이 스타일 -->
+        <Style x:Key="UIOverlayTextStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Background" Value="#80000000"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="Black" BlurRadius="2" ShadowDepth="1"/>
+                </Setter.Value>
+            </Setter>
         </Style>
     </Window.Resources>
 
@@ -85,11 +202,9 @@
                            Style="{StaticResource DialogueTextStyle}"/>
 
                 <!-- 계속 표시 -->
-                <TextBlock Text="▼ 스페이스바를 눌러 계속..."
-                           Foreground="Gray"
-                           FontSize="12"
-                           HorizontalAlignment="Right"
-                           Margin="0,10,0,0"/>
+                <TextBlock Text="{Binding ContinuePrompt}"
+                           Style="{StaticResource ContinuePromptStyle}"
+                           Visibility="{Binding ContinuePromptVisibility}"/>
             </StackPanel>
         </Border>
 
@@ -98,14 +213,19 @@
                     Visibility="{Binding ChoicesVisibility}"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Center"
-                    Panel.ZIndex="3">
+                    Panel.ZIndex="3"
+                    MaxWidth="800">
             <ItemsControl ItemsSource="{Binding CurrentChoices}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <Button Content="{Binding Text}"
                                 Command="{Binding SelectCommand}"
-                                Style="{StaticResource MenuButtonStyle}"
-                                Margin="0,5"/>
+                                Style="{StaticResource ChoiceButtonStyle}">
+                            <!-- 버튼 크기를 텍스트에 맞게 자동 조절 -->
+                            <Button.Effect>
+                                <DropShadowEffect Color="Black" BlurRadius="5" ShadowDepth="2" Opacity="0.7"/>
+                            </Button.Effect>
+                        </Button>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
@@ -113,37 +233,45 @@
 
         <!-- 게임 메뉴 -->
         <Grid x:Name="GameMenu"
-              Background="#C0000000"
+              Background="#E0000000"
               Visibility="{Binding GameMenuVisibility}"
               Panel.ZIndex="10">
-            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                <TextBlock Text="게임 메뉴" 
-                           FontSize="24" 
-                           FontWeight="Bold" 
-                           Foreground="White" 
-                           HorizontalAlignment="Center" 
-                           Margin="0,0,0,20"/>
+            <Border Background="#2C3E50"
+                    CornerRadius="10"
+                    Padding="30"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    BorderBrush="#34495E"
+                    BorderThickness="2">
+                <StackPanel>
+                    <TextBlock Text="게임 메뉴" 
+                               FontSize="28" 
+                               FontWeight="Bold" 
+                               Foreground="White" 
+                               HorizontalAlignment="Center" 
+                               Margin="0,0,0,25"/>
 
-                <Button Content="게임으로 돌아가기" 
-                        Command="{Binding ResumeGameCommand}"
-                        Style="{StaticResource MenuButtonStyle}"/>
+                    <Button Content="게임으로 돌아가기" 
+                            Command="{Binding ResumeGameCommand}"
+                            Style="{StaticResource MenuButtonStyle}"/>
 
-                <Button Content="저장하기" 
-                        Command="{Binding SaveGameCommand}"
-                        Style="{StaticResource MenuButtonStyle}"/>
+                    <Button Content="저장하기" 
+                            Command="{Binding SaveGameCommand}"
+                            Style="{StaticResource MenuButtonStyle}"/>
 
-                <Button Content="불러오기" 
-                        Command="{Binding LoadGameCommand}"
-                        Style="{StaticResource MenuButtonStyle}"/>
+                    <Button Content="불러오기" 
+                            Command="{Binding LoadGameCommand}"
+                            Style="{StaticResource MenuButtonStyle}"/>
 
-                <Button Content="설정" 
-                        Command="{Binding ShowSettingsCommand}"
-                        Style="{StaticResource MenuButtonStyle}"/>
+                    <Button Content="설정" 
+                            Command="{Binding ShowSettingsCommand}"
+                            Style="{StaticResource MenuButtonStyle}"/>
 
-                <Button Content="타이틀로 돌아가기" 
-                        Command="{Binding ReturnToTitleCommand}"
-                        Style="{StaticResource MenuButtonStyle}"/>
-            </StackPanel>
+                    <Button Content="타이틀로 돌아가기" 
+                            Command="{Binding ReturnToTitleCommand}"
+                            Style="{StaticResource MenuButtonStyle}"/>
+                </StackPanel>
+            </Border>
         </Grid>
 
         <!-- UI 오버레이 (상태 표시용) -->
@@ -154,19 +282,21 @@
               Panel.ZIndex="5">
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="{Binding CurrentStoryPosition}" 
-                           Foreground="White" 
-                           FontSize="12" 
-                           Background="#80000000" 
-                           Padding="10,5"/>
+                           Style="{StaticResource UIOverlayTextStyle}"/>
 
                 <TextBlock Text="{Binding AutoPlayStatus}" 
-                           Foreground="Yellow" 
-                           FontSize="12" 
-                           Background="#80000000" 
-                           Padding="10,5"
+                           Style="{StaticResource UIOverlayTextStyle}"
+                           Foreground="Yellow"
                            Margin="5,0,0,0"
                            Visibility="{Binding AutoPlayVisibility}"/>
             </StackPanel>
         </Grid>
+
+        <!-- 클릭 가능한 투명 영역 (대화 진행용) -->
+        <Rectangle x:Name="ClickArea"
+                   Fill="Transparent"
+                   Panel.ZIndex="1"
+                   MouseLeftButtonDown="ClickArea_MouseLeftButtonDown"
+                   Visibility="{Binding DialogueBoxVisibility}"/>
     </Grid>
 </Window>

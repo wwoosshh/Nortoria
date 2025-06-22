@@ -28,3 +28,6 @@ C:\Users\user\source\repos\Connection\Connection\obj\Release\net8.0-windows\refi
 C:\Users\user\source\repos\Connection\Connection\obj\Release\net8.0-windows\Connection.pdb
 C:\Users\user\source\repos\Connection\Connection\obj\Release\net8.0-windows\Connection.genruntimeconfig.cache
 C:\Users\user\source\repos\Connection\Connection\obj\Release\net8.0-windows\ref\Connection.dll
+C:\Users\user\source\repos\Connection\Connection\bin\Release\net8.0-windows\Resources\Scripts\Chapter1_Episode1.json
+C:\Users\user\source\repos\Connection\Connection\bin\Release\net8.0-windows\Resources\Scripts\chapters.json
+C:\Users\user\source\repos\Connection\Connection\obj\Release\net8.0-windows\Connection.sourcelink.json

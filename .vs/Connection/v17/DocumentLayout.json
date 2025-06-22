@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\Connection\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\viewmodels\\settingsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\viewmodels\\settingsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\viewmodels\\gameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\viewmodels\\gameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\views\\settingswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\views\\settingswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\views\\inventorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\views\\inventorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\views\\settingswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\views\\settingswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\resources\\scripts\\chapter1_episode1.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\resources\\scripts\\chapter1_episode1.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\utils\\localizationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\utils\\localizationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\resources\\scripts\\chapters.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\resources\\scripts\\chapters.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\viewmodels\\inventoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\viewmodels\\inventoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\views\\inventorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\views\\inventorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\services\\storyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,6 +35,50 @@
       "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\models\\scriptdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\models\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\models\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\models\\gamesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\models\\gamesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\models\\storydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\models\\storydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\views\\settingswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\views\\settingswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\views\\gamewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\views\\gamewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\utils\\localizationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\utils\\localizationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\views\\gamewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\views\\gamewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\viewmodels\\settingsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\viewmodels\\settingsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\views\\settingswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\views\\settingswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,20 +87,8 @@
       "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\services\\settingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\models\\gamesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\models\\gamesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\models\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\models\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\utils\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,24 +99,8 @@
       "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\utils\\helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\viewmodels\\gameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\viewmodels\\gameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\views\\gamewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\views\\gamewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\views\\gamewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\views\\gamewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\connection.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -89,10 +113,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\models\\storydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\models\\storydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -102,62 +122,162 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SettingsViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\ViewModels\\SettingsViewModel.cs",
-              "RelativeDocumentMoniker": "Connection\\ViewModels\\SettingsViewModel.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\ViewModels\\SettingsViewModel.cs",
-              "RelativeToolTip": "Connection\\ViewModels\\SettingsViewModel.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAUwFwAAAASAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "InventoryWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\InventoryWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Connection\\Views\\InventoryWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\InventoryWindow.xaml.cs",
+              "RelativeToolTip": "Connection\\Views\\InventoryWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwCwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T08:07:45.854Z",
+              "WhenOpened": "2025-06-22T13:19:52.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InventoryViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\ViewModels\\InventoryViewModel.cs",
+              "RelativeDocumentMoniker": "Connection\\ViewModels\\InventoryViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\ViewModels\\InventoryViewModel.cs",
+              "RelativeToolTip": "Connection\\ViewModels\\InventoryViewModel.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAADwv5gAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T13:19:38.145Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SettingsWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\SettingsWindow.xaml",
-              "RelativeDocumentMoniker": "Connection\\Views\\SettingsWindow.xaml",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\SettingsWindow.xaml",
-              "RelativeToolTip": "Connection\\Views\\SettingsWindow.xaml",
+              "Title": "InventoryWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\InventoryWindow.xaml",
+              "RelativeDocumentMoniker": "Connection\\Views\\InventoryWindow.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\InventoryWindow.xaml",
+              "RelativeToolTip": "Connection\\Views\\InventoryWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-20T08:09:08.692Z",
+              "WhenOpened": "2025-06-22T13:18:58.518Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserData.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Models\\UserData.cs",
-              "RelativeDocumentMoniker": "Connection\\Models\\UserData.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Models\\UserData.cs",
-              "RelativeToolTip": "Connection\\Models\\UserData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABOAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Chapter1_Episode1.json",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Resources\\Scripts\\Chapter1_Episode1.json",
+              "RelativeDocumentMoniker": "Connection\\Resources\\Scripts\\Chapter1_Episode1.json",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Resources\\Scripts\\Chapter1_Episode1.json",
+              "RelativeToolTip": "Connection\\Resources\\Scripts\\Chapter1_Episode1.json",
+              "ViewState": "AgIAAFMCAAAAAAAAAAAAwG0CAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-21T05:41:28.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StoryService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Services\\StoryService.cs",
+              "RelativeDocumentMoniker": "Connection\\Services\\StoryService.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Services\\StoryService.cs",
+              "RelativeToolTip": "Connection\\Services\\StoryService.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAiwDgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T08:05:48.292Z",
+              "WhenOpened": "2025-06-20T08:07:59.931Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "GameViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\ViewModels\\GameViewModel.cs",
+              "RelativeDocumentMoniker": "Connection\\ViewModels\\GameViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\ViewModels\\GameViewModel.cs",
+              "RelativeToolTip": "Connection\\ViewModels\\GameViewModel.cs",
+              "ViewState": "AgIAAJkBAAAAAAAAAAAkwKsBAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T08:07:40.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Connection\\Views\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\MainWindow.xaml",
+              "RelativeToolTip": "Connection\\Views\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-20T08:08:44.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ScriptData.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Models\\ScriptData.cs",
               "RelativeDocumentMoniker": "Connection\\Models\\ScriptData.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Models\\ScriptData.cs",
               "RelativeToolTip": "Connection\\Models\\ScriptData.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAAwAoAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAzwIAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T08:07:18.337Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "chapters.json",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Resources\\Scripts\\chapters.json",
+              "RelativeDocumentMoniker": "Connection\\Resources\\Scripts\\chapters.json",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Resources\\Scripts\\chapters.json",
+              "RelativeToolTip": "Connection\\Resources\\Scripts\\chapters.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-21T05:41:21.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Connection\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\MainWindow.xaml",
+              "RelativeToolTip": "Connection\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-20T08:02:51.445Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "UserData.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Models\\UserData.cs",
+              "RelativeDocumentMoniker": "Connection\\Models\\UserData.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Models\\UserData.cs",
+              "RelativeToolTip": "Connection\\Models\\UserData.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAADwv1cAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T08:05:48.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StoryData.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Models\\StoryData.cs",
+              "RelativeDocumentMoniker": "Connection\\Models\\StoryData.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Models\\StoryData.cs",
+              "RelativeToolTip": "Connection\\Models\\StoryData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T08:07:13.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "GameSettings.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Models\\GameSettings.cs",
               "RelativeDocumentMoniker": "Connection\\Models\\GameSettings.cs",
@@ -170,7 +290,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
+              "Title": "GameWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\GameWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Connection\\Views\\GameWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\GameWindow.xaml.cs",
+              "RelativeToolTip": "Connection\\Views\\GameWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwCwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T08:13:14.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GameWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\GameWindow.xaml",
+              "RelativeDocumentMoniker": "Connection\\Views\\GameWindow.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\GameWindow.xaml",
+              "RelativeToolTip": "Connection\\Views\\GameWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-20T08:08:51.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SettingsWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\SettingsWindow.xaml",
+              "RelativeDocumentMoniker": "Connection\\Views\\SettingsWindow.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\SettingsWindow.xaml",
+              "RelativeToolTip": "Connection\\Views\\SettingsWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-20T08:09:08.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "SettingsService.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Services\\SettingsService.cs",
               "RelativeDocumentMoniker": "Connection\\Services\\SettingsService.cs",
@@ -178,38 +332,35 @@
               "RelativeToolTip": "Connection\\Services\\SettingsService.cs",
               "ViewState": "AgIAAJgAAAAAAAAAAAAiwKsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T08:08:04.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T08:08:04.292Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 15,
               "Title": "LocalizationHelper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Utils\\LocalizationHelper.cs",
               "RelativeDocumentMoniker": "Connection\\Utils\\LocalizationHelper.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Utils\\LocalizationHelper.cs",
               "RelativeToolTip": "Connection\\Utils\\LocalizationHelper.cs",
-              "ViewState": "AgIAAO4AAAAAAAAAAAAgwBMBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAiwCYAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T08:19:34.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T08:19:34.267Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StoryService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Services\\StoryService.cs",
-              "RelativeDocumentMoniker": "Connection\\Services\\StoryService.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Services\\StoryService.cs",
-              "RelativeToolTip": "Connection\\Services\\StoryService.cs",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAgwMoAAAABAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "SettingsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\ViewModels\\SettingsViewModel.cs",
+              "RelativeDocumentMoniker": "Connection\\ViewModels\\SettingsViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\ViewModels\\SettingsViewModel.cs",
+              "RelativeToolTip": "Connection\\ViewModels\\SettingsViewModel.cs",
+              "ViewState": "AgIAABsBAAAAAAAAAAAQwFIBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T08:07:59.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T08:07:45.854Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 18,
               "Title": "SettingsWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\SettingsWindow.xaml.cs",
               "RelativeDocumentMoniker": "Connection\\Views\\SettingsWindow.xaml.cs",
@@ -217,12 +368,11 @@
               "RelativeToolTip": "Connection\\Views\\SettingsWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T08:12:14.909Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T08:12:14.909Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 21,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Connection\\MainWindow.xaml.cs",
@@ -230,12 +380,11 @@
               "RelativeToolTip": "Connection\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T08:02:51.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T08:02:51.051Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 19,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\ViewModels\\MainViewModel.cs",
               "RelativeDocumentMoniker": "Connection\\ViewModels\\MainViewModel.cs",
@@ -243,24 +392,11 @@
               "RelativeToolTip": "Connection\\ViewModels\\MainViewModel.cs",
               "ViewState": "AgIAAP0AAAAAAAAAAAAgwBEBAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T08:07:36.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T08:07:36.13Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Connection\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\MainWindow.xaml",
-              "RelativeToolTip": "Connection\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-20T08:02:51.445Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 22,
               "Title": "Constants.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Utils\\Constants.cs",
               "RelativeDocumentMoniker": "Connection\\Utils\\Constants.cs",
@@ -268,12 +404,11 @@
               "RelativeToolTip": "Connection\\Utils\\Constants.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAUwDIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T08:08:30.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T08:08:30.51Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 23,
               "Title": "Helpers.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Utils\\Helpers.cs",
               "RelativeDocumentMoniker": "Connection\\Utils\\Helpers.cs",
@@ -281,37 +416,11 @@
               "RelativeToolTip": "Connection\\Utils\\Helpers.cs",
               "ViewState": "AgIAAJQAAAAAAAAAAAAYwLcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T08:08:34.981Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T08:08:34.981Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "GameViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\ViewModels\\GameViewModel.cs",
-              "RelativeDocumentMoniker": "Connection\\ViewModels\\GameViewModel.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\ViewModels\\GameViewModel.cs",
-              "RelativeToolTip": "Connection\\ViewModels\\GameViewModel.cs",
-              "ViewState": "AgIAAHsBAAAAAAAAAAAIwJsBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T08:07:40.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Connection\\Views\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\MainWindow.xaml",
-              "RelativeToolTip": "Connection\\Views\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-20T08:08:44.057Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "DataService.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Services\\DataService.cs",
               "RelativeDocumentMoniker": "Connection\\Services\\DataService.cs",
@@ -319,37 +428,11 @@
               "RelativeToolTip": "Connection\\Services\\DataService.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAcwGcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T08:07:55.32Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T08:07:55.32Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "GameWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\GameWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Connection\\Views\\GameWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\GameWindow.xaml.cs",
-              "RelativeToolTip": "Connection\\Views\\GameWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T08:13:14.012Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "GameWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\GameWindow.xaml",
-              "RelativeDocumentMoniker": "Connection\\Views\\GameWindow.xaml",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\GameWindow.xaml",
-              "RelativeToolTip": "Connection\\Views\\GameWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-20T08:08:51.715Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\App.xaml.cs",
               "RelativeDocumentMoniker": "Connection\\App.xaml.cs",
@@ -357,12 +440,11 @@
               "RelativeToolTip": "Connection\\App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T08:18:47.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T08:18:47.145Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\App.xaml",
               "RelativeDocumentMoniker": "Connection\\App.xaml",
@@ -374,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "Connection.csproj",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Connection.csproj",
               "RelativeDocumentMoniker": "Connection\\Connection.csproj",
@@ -382,21 +464,7 @@
               "RelativeToolTip": "Connection\\Connection.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-20T08:20:05.237Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "StoryData.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Models\\StoryData.cs",
-              "RelativeDocumentMoniker": "Connection\\Models\\StoryData.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Models\\StoryData.cs",
-              "RelativeToolTip": "Connection\\Models\\StoryData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T08:07:13.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T08:20:05.237Z"
             }
           ]
         }

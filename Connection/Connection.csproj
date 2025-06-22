@@ -23,7 +23,6 @@
 
 	<ItemGroup>
 		<Folder Include="Resources\Images\" />
-		<Folder Include="Resources\Scripts\" />
 		<Folder Include="Resources\Audio\" />
 		<Folder Include="Resources\Localization\" />
 	</ItemGroup>

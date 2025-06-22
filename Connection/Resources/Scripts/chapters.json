@@ -1,0 +1,32 @@
+[
+    {
+        "chapterNumber": 1,
+        "title": "노토리얼 메시지",
+        "episodes": [
+            {
+                "episodeNumber": 1,
+                "title": "이야기의 시작",
+                "scriptFile": "Chapter1_Episode1.json",
+                "isUnlocked": true,
+                "isCompleted": false,
+                "requiredResources": []
+            }
+        ],
+        "isUnlocked": true
+    },
+    {
+        "chapterNumber": 2,
+        "title": "무야호",
+        "episodes": [
+            {
+                "episodeNumber": 1,
+                "title": "세밀리아 시밀리의 영역",
+                "scriptFile": "Chapter2_Episode1.json",
+                "isUnlocked": false,
+                "isCompleted": false,
+                "requiredResources": []
+            }
+        ],
+        "isUnlocked": false
+    }
+]

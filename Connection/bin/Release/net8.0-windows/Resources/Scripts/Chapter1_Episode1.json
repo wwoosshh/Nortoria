@@ -1,0 +1,833 @@
+/*{
+    "chapter": 1,
+    "episode": 1,
+    "scripts": [
+        {
+            "index": 0,
+            "type": "Background",
+            "backgroundImage": "backgrounds/darkness.jpg"
+        },
+        {
+            "index": 1,
+            "type": "Narration",
+            "text": {
+                "Korean": "세상에는 보이지 않는 것들이 있다. 눈으로 볼 수 없고, 손으로 만질 수도 없지만...",
+                "English": "There are things in this world that cannot be seen. Invisible to the eye, untouchable by hand, yet...",
+                "Japanese": "この世界には見えないものがある。目に見えず、手で触れることもできないが..."
+            }
+        },
+        {
+            "index": 2,
+            "type": "Narration",
+            "text": {
+                "Korean": "그것들이야말로 진정으로 세상을 움직이는 힘이다.",
+                "English": "These are the very forces that truly move the world.",
+                "Japanese": "それこそが真に世界を動かす力なのだ。"
+            }
+        },
+        {
+            "index": 3,
+            "type": "Narration",
+            "text": {
+                "Korean": "권한, 의지, 운명... 그리고 선택.",
+                "English": "Authority, will, destiny... and choice.",
+                "Japanese": "権限、意志、運命...そして選択。"
+            }
+        },
+        {
+            "index": 4,
+            "type": "Background",
+            "backgroundImage": "backgrounds/forest_village.jpg"
+        },
+        {
+            "index": 5,
+            "type": "Narration",
+            "text": {
+                "Korean": "나무의 나라 변두리, 작은 마을에서 한 사람이 잠에서 깨어난다.",
+                "English": "In a small village on the outskirts of the Tree Country, someone awakens from sleep.",
+                "Japanese": "木の国の片隅、小さな村で一人の人が眠りから目覚める。"
+            }
+        },
+        {
+            "index": 6,
+            "type": "Narration",
+            "text": {
+                "Korean": "평범한 일상, 평범한 삶... 하지만 어젯밤 그가 꾼 꿈은 평범하지 않았다.",
+                "English": "An ordinary daily life, an ordinary existence... But the dream he had last night was anything but ordinary.",
+                "Japanese": "平凡な日常、平凡な人生...しかし昨夜彼が見た夢は平凡ではなかった。"
+            }
+        },
+        {
+            "index": 7,
+            "type": "Background",
+            "backgroundImage": "backgrounds/dream_sequence.jpg"
+        },
+        {
+            "index": 8,
+            "type": "Narration",
+            "text": {
+                "Korean": "꿈 속에서 그는 거대한 존재와 마주했다. 신이라고 불러야 할 그 존재는...",
+                "English": "In his dream, he faced an immense being. The entity that could only be called a god...",
+                "Japanese": "夢の中で彼は巨大な存在と向き合った。神と呼ぶべきその存在は..."
+            }
+        },
+        {
+            "index": 9,
+            "type": "Dialogue",
+            "speaker": "MYSTERIOUS_FIGURE",
+            "text": {
+                "Korean": "다섯 번째 세계... 커넥션 노토리얼.",
+                "English": "The fifth world... Connection Nortoria.",
+                "Japanese": "五番目の世界...コネクション・ノトリアル。"
+            }
+        },
+        {
+            "index": 10,
+            "type": "Dialogue",
+            "speaker": "MYSTERIOUS_FIGURE",
+            "text": {
+                "Korean": "네 번의 실패 끝에, 마지막 희망이 깨어났구나.",
+                "English": "After four failures, the final hope has awakened.",
+                "Japanese": "四度の失敗の末、最後の希望が目覚めたな。"
+            }
+        },
+        {
+            "index": 11,
+            "type": "Narration",
+            "text": {
+                "Korean": "주인공은 그 목소리가 무엇을 의미하는지 알 수 없었다. 하지만 가슴 깊은 곳에서...",
+                "English": "The protagonist couldn't understand what that voice meant. But deep in his heart...",
+                "Japanese": "主人公はその声が何を意味するのか分からなかった。しかし心の奥深くで..."
+            }
+        },
+        {
+            "index": 12,
+            "type": "Narration",
+            "text": {
+                "Korean": "무언가 큰 변화가 시작될 것임을 직감했다.",
+                "English": "He sensed that some great change was about to begin.",
+                "Japanese": "何か大きな変化が始まることを直感した。"
+            }
+        },
+        {
+            "index": 13,
+            "type": "Background",
+            "backgroundImage": "backgrounds/village_morning.jpg"
+        },
+        {
+            "index": 14,
+            "type": "Narration",
+            "text": {
+                "Korean": "아침 햇살이 창문을 통해 들어온다. 꿈은 끝났지만, 그 여운은 사라지지 않았다.",
+                "English": "Morning sunlight streams through the window. The dream has ended, but its lingering presence remains.",
+                "Japanese": "朝日が窓から差し込んでくる。夢は終わったが、その余韻は消えなかった。"
+            }
+        },
+        {
+            "index": 15,
+            "type": "Dialogue",
+            "speaker": "PROTAGONIST",
+            "text": {
+                "Korean": "다섯 번째 세계라... 그게 무슨 뜻이었을까?",
+                "English": "The fifth world... What could that have meant?",
+                "Japanese": "五番目の世界か...それは何を意味していたのだろう？"
+            }
+        },
+        {
+            "index": 16,
+            "type": "Narration",
+            "text": {
+                "Korean": "그때, 마을 밖에서 이상한 빛이 번쩍였다.",
+                "English": "Just then, a strange light flashed from outside the village.",
+                "Japanese": "その時、村の外から奇妙な光が閃いた。"
+            }
+        },
+        {
+            "index": 17,
+            "type": "Background",
+            "backgroundImage": "backgrounds/mysterious_light.jpg"
+        },
+        {
+            "index": 18,
+            "type": "Narration",
+            "text": {
+                "Korean": "마을 사람들이 웅성거리기 시작한다. 모두들 그 빛을 보았지만, 그 의미를 아는 자는 없었다.",
+                "English": "The villagers begin to murmur. Everyone saw the light, but none understood its meaning.",
+                "Japanese": "村人たちがざわめき始める。皆その光を見たが、その意味を知る者はいなかった。"
+            }
+        },
+        {
+            "index": 19,
+            "type": "Choice",
+            "choices": [
+                {
+                    "text": {
+                        "Korean": "빛의 근원을 조사하러 간다",
+                        "English": "Go investigate the source of the light",
+                        "Japanese": "光の源を調査しに行く"
+                    },
+                    "nextScriptIndex": 20
+                },
+                {
+                    "text": {
+                        "Korean": "마을 사람들과 이야기를 나눈다",
+                        "English": "Talk with the villagers",
+                        "Japanese": "村人たちと話をする"
+                    },
+                    "nextScriptIndex": 24
+                },
+                {
+                    "text": {
+                        "Korean": "꿈에 대해 더 생각해본다",
+                        "English": "Think more about the dream",
+                        "Japanese": "夢についてもっと考えてみる"
+                    },
+                    "nextScriptIndex": 28
+                }
+            ]
+        },
+        {
+            "index": 20,
+            "type": "Narration",
+            "text": {
+                "Korean": "호기심이 두려움을 이긴다. 주인공은 빛이 나타난 곳으로 향하기로 결심한다.",
+                "English": "Curiosity conquers fear. The protagonist decides to head toward where the light appeared.",
+                "Japanese": "好奇心が恐怖に勝つ。主人公は光が現れた場所に向かうことを決心する。"
+            }
+        },
+        {
+            "index": 21,
+            "type": "Dialogue",
+            "speaker": "VILLAGE_ELDER",
+            "text": {
+                "Korean": "젊은이, 위험할지도 모르네. 혼자 가지는 말게.",
+                "English": "Young one, it might be dangerous. Don't go alone.",
+                "Japanese": "若者よ、危険かもしれん。一人で行ってはならぬ。"
+            }
+        },
+        {
+            "index": 22,
+            "type": "Dialogue",
+            "speaker": "PROTAGONIST",
+            "text": {
+                "Korean": "괜찮습니다. 뭔가... 저를 부르는 것 같아요.",
+                "English": "It's alright. Something... seems to be calling me.",
+                "Japanese": "大丈夫です。何か...私を呼んでいるような気がします。"
+            }
+        },
+        {
+            "index": 23,
+            "type": "Narration",
+            "text": {
+                "Korean": "그 말을 남기고, 주인공은 숲 속으로 발걸음을 옮긴다.",
+                "English": "Leaving those words behind, the protagonist steps into the forest.",
+                "Japanese": "その言葉を残して、主人公は森の中に足を向ける。"
+            }
+        },
+        {
+            "index": 24,
+            "type": "Dialogue",
+            "speaker": "VILLAGE_CHILD",
+            "text": {
+                "Korean": "아저씨! 그 빛 봤어요? 너무 예뻤어요!",
+                "English": "Mister! Did you see that light? It was so pretty!",
+                "Japanese": "おじさん！あの光見ました？とても綺麗でした！"
+            }
+        },
+        {
+            "index": 25,
+            "type": "Dialogue",
+            "speaker": "VILLAGE_ELDER",
+            "text": {
+                "Korean": "예전에도 이런 일이 있었다네... 하지만 그때는...",
+                "English": "This has happened before... but back then...",
+                "Japanese": "以前にもこんなことがあった...しかしその時は..."
+            }
+        },
+        {
+            "index": 26,
+            "type": "Dialogue",
+            "speaker": "PROTAGONIST",
+            "text": {
+                "Korean": "그때는 어떻게 되었나요?",
+                "English": "What happened back then?",
+                "Japanese": "その時はどうなったのですか？"
+            }
+        },
+        {
+            "index": 27,
+            "type": "Dialogue",
+            "speaker": "VILLAGE_ELDER",
+            "text": {
+                "Korean": "...기억이 흐릿하네. 마치 꿈처럼 말이야.",
+                "English": "...My memory is hazy. Like a dream.",
+                "Japanese": "...記憶が曖昧じゃ。まるで夢のようにな。"
+            }
+        },
+        {
+            "index": 28,
+            "type": "Narration",
+            "text": {
+                "Korean": "주인공은 조용한 곳에 앉아 어젯밤의 꿈을 다시 떠올려본다.",
+                "English": "The protagonist sits in a quiet place and recalls last night's dream again.",
+                "Japanese": "主人公は静かな場所に座り、昨夜の夢を再び思い起こしてみる。"
+            }
+        },
+        {
+            "index": 29,
+            "type": "Narration",
+            "text": {
+                "Korean": "그 신비한 존재의 말... '다섯 번째 세계', '네 번의 실패', '마지막 희망'...",
+                "English": "The words of that mysterious being... 'The fifth world', 'Four failures', 'Final hope'...",
+                "Japanese": "あの神秘的な存在の言葉...「五番目の世界」「四度の失敗」「最後の希望」..."
+            }
+        },
+        {
+            "index": 30,
+            "type": "Dialogue",
+            "speaker": "PROTAGONIST",
+            "text": {
+                "Korean": "마지막 희망이라... 설마 그게 나를 말하는 건 아니겠지?",
+                "English": "Final hope... Surely that couldn't be referring to me?",
+                "Japanese": "最後の希望か...まさかそれが私のことを指しているわけではないだろう？"
+            }
+        },
+        {
+            "index": 31,
+            "type": "Background",
+            "backgroundImage": "backgrounds/divine_space.jpg"
+        },
+        {
+            "index": 32,
+            "type": "Narration",
+            "text": {
+                "Korean": "그 순간, 세계가 일순간 정지한 듯했다. 시간마저 멈춘 공간에서...",
+                "English": "In that moment, the world seemed to stop for an instant. In a space where even time had ceased...",
+                "Japanese": "その瞬間、世界が一瞬止まったかのようだった。時間さえも止まった空間で..."
+            }
+        },
+        {
+            "index": 33,
+            "type": "Character",
+            "characterImage": "characters/shelmon.png"
+        },
+        {
+            "index": 34,
+            "type": "Dialogue",
+            "speaker": "MAFTEAH_SHELMON",
+            "text": {
+                "Korean": "마침내... 각성의 시간이 왔구나.",
+                "English": "At last... the time of awakening has come.",
+                "Japanese": "ついに...覚醒の時が来たな。"
+            }
+        },
+        {
+            "index": 35,
+            "type": "Dialogue",
+            "speaker": "MAFTEAH_SHELMON",
+            "text": {
+                "Korean": "나는 마프테아 셀몬. 이 세계의 창조주이자... 너의 시험관이다.",
+                "English": "I am Mafteah Shelmon. Creator of this world and... your examiner.",
+                "Japanese": "私はマフテア・シェルモン。この世界の創造主であり...君の試験官だ。"
+            }
+        },
+        {
+            "index": 36,
+            "type": "Dialogue",
+            "speaker": "PROTAGONIST",
+            "text": {
+                "Korean": "시험관? 무슨 시험을 말씀하시는 겁니까?",
+                "English": "Examiner? What test are you speaking of?",
+                "Japanese": "試験官？どのような試験のことをおっしゃっているのですか？"
+            }
+        },
+        {
+            "index": 37,
+            "type": "Dialogue",
+            "speaker": "MAFTEAH_SHELMON",
+            "text": {
+                "Korean": "이 세계... 커넥션 노토리얼을 레메게톤으로 만드는 시험이다.",
+                "English": "The test to transform this world... Connection Nortoria into Lemegeton.",
+                "Japanese": "この世界...コネクション・ノトリアルをレメゲトンにする試験だ。"
+            }
+        },
+        {
+            "index": 38,
+            "type": "Dialogue",
+            "speaker": "MAFTEAH_SHELMON",
+            "text": {
+                "Korean": "레메게톤... 진정한 세계로 향하는 다리. 그것을 만들기 위해서는 초월자가 필요하다.",
+                "English": "Lemegeton... a bridge to the true world. To create it, a transcendent is needed.",
+                "Japanese": "レメゲトン...真の世界への橋。それを作るためには超越者が必要だ。"
+            }
+        },
+        {
+            "index": 39,
+            "type": "Dialogue",
+            "speaker": "PROTAGONIST",
+            "text": {
+                "Korean": "초월자가... 되라는 말씀인가요?",
+                "English": "You're asking me to... become a transcendent?",
+                "Japanese": "超越者に...なれということですか？"
+            }
+        },
+        {
+            "index": 40,
+            "type": "Dialogue",
+            "speaker": "MAFTEAH_SHELMON",
+            "text": {
+                "Korean": "그렇다. 십간의 신들로부터 권한을 얻어라. 그들의 인정을 받거나... 아니면 그들을 제압하거나.",
+                "English": "Indeed. Obtain authority from the ten stem gods. Either gain their recognition... or subdue them.",
+                "Japanese": "そうだ。十干の神々から権限を得よ。彼らの認証を得るか...あるいは彼らを制圧するか。"
+            }
+        },
+        {
+            "index": 41,
+            "type": "Choice",
+            "choices": [
+                {
+                    "text": {
+                        "Korean": "왜 하필 저를 선택했습니까?",
+                        "English": "Why did you choose me specifically?",
+                        "Japanese": "なぜよりによって私を選んだのですか？"
+                    },
+                    "nextScriptIndex": 42
+                },
+                {
+                    "text": {
+                        "Korean": "네 번의 실패란 무엇을 의미합니까?",
+                        "English": "What do the four failures mean?",
+                        "Japanese": "四度の失敗とは何を意味するのですか？"
+                    },
+                    "nextScriptIndex": 46
+                },
+                {
+                    "text": {
+                        "Korean": "거부할 수 있습니까?",
+                        "English": "Can I refuse?",
+                        "Japanese": "拒否することはできますか？"
+                    },
+                    "nextScriptIndex": 50
+                }
+            ]
+        },
+        {
+            "index": 42,
+            "type": "Dialogue",
+            "speaker": "MAFTEAH_SHELMON",
+            "text": {
+                "Korean": "선택이 아니다. 너 스스로가 이 순간을 불러들인 것이다.",
+                "English": "It is not a choice. You yourself have summoned this moment.",
+                "Japanese": "選択ではない。君自身がこの瞬間を呼び寄せたのだ。"
+            }
+        },
+        {
+            "index": 43,
+            "type": "Dialogue",
+            "speaker": "MAFTEAH_SHELMON",
+            "text": {
+                "Korean": "꿈을 통해, 무의식을 통해... 너의 영혼이 각성을 원했다.",
+                "English": "Through dreams, through the unconscious... your soul desired awakening.",
+                "Japanese": "夢を通して、無意識を通して...君の魂が覚醒を望んだのだ。"
+            }
+        },
+        {
+            "index": 44,
+            "type": "Dialogue",
+            "speaker": "PROTAGONIST",
+            "text": {
+                "Korean": "제가... 원했다고요?",
+                "English": "I... wanted this?",
+                "Japanese": "私が...望んだと？"
+            }
+        },
+        {
+            "index": 45,
+            "type": "Dialogue",
+            "speaker": "MAFTEAH_SHELMON",
+            "text": {
+                "Korean": "평범함 속에 갇힌 영혼은 언젠가 자유를 갈망하게 된다. 네가 바로 그런 영혼이다.",
+                "English": "A soul trapped in ordinariness will eventually long for freedom. You are such a soul.",
+                "Japanese": "平凡さに囚われた魂はいつかは自由を渇望するようになる。君がまさにそのような魂だ。"
+            }
+        },
+        {
+            "index": 46,
+            "type": "Dialogue",
+            "speaker": "MAFTEAH_SHELMON",
+            "text": {
+                "Korean": "커넥션 아르스, 커넥션 테우르기아, 커넥션 로올리나, 커넥션 알마델...",
+                "English": "Connection Ars, Connection Theurgia, Connection Paulina, Connection Almadel...",
+                "Japanese": "コネクション・アルス、コネクション・テウルギア、コネクション・ロオリナ、コネクション・アルマデル..."
+            }
+        },
+        {
+            "index": 47,
+            "type": "Dialogue",
+            "speaker": "MAFTEAH_SHELMON",
+            "text": {
+                "Korean": "네 개의 세계가 실패했다. 초월자가 나오지 못했거나... 길을 잃었거나.",
+                "English": "Four worlds have failed. Either no transcendent emerged... or they lost their way.",
+                "Japanese": "四つの世界が失敗した。超越者が現れなかったか...道を見失ったか。"
+            }
+        },
+        {
+            "index": 48,
+            "type": "Dialogue",
+            "speaker": "PROTAGONIST",
+            "text": {
+                "Korean": "그래서 다섯 번째 세계를 만든 것인가요?",
+                "English": "So you created the fifth world?",
+                "Japanese": "それで五番目の世界を作ったのですか？"
+            }
+        },
+        {
+            "index": 49,
+            "type": "Dialogue",
+            "speaker": "MAFTEAH_SHELMON",
+            "text": {
+                "Korean": "그렇다. 하지만 이것이 마지막이다. 더 이상의 실패는... 받아들일 수 없다.",
+                "English": "Yes. But this is the last. No more failures... can be accepted.",
+                "Japanese": "そうだ。しかしこれが最後だ。これ以上の失敗は...受け入れられない。"
+            }
+        },
+        {
+            "index": 50,
+            "type": "Dialogue",
+            "speaker": "MAFTEAH_SHELMON",
+            "text": {
+                "Korean": "거부한다면? 이 세계는 다시 리셋될 것이다.",
+                "English": "If you refuse? This world will be reset again.",
+                "Japanese": "拒否するなら？この世界は再びリセットされるだろう。"
+            }
+        },
+        {
+            "index": 51,
+            "type": "Dialogue",
+            "speaker": "MAFTEAH_SHELMON",
+            "text": {
+                "Korean": "너의 마을, 너의 사람들, 너의 모든 기억... 모두 사라질 것이다.",
+                "English": "Your village, your people, all your memories... everything will disappear.",
+                "Japanese": "君の村、君の人々、君のすべての記憶...すべて消えるだろう。"
+            }
+        },
+        {
+            "index": 52,
+            "type": "Dialogue",
+            "speaker": "PROTAGONIST",
+            "text": {
+                "Korean": "그럼... 선택의 여지가 없다는 말씀인가요?",
+                "English": "Then... you're saying I have no choice?",
+                "Japanese": "では...選択の余地がないということですか？"
+            }
+        },
+        {
+            "index": 53,
+            "type": "Dialogue",
+            "speaker": "MAFTEAH_SHELMON",
+            "text": {
+                "Korean": "선택은 항상 있다. 다만 그 결과를 받아들일 준비가 되어있느냐가 문제일 뿐이다.",
+                "English": "There is always a choice. The question is whether you're prepared to accept the consequences.",
+                "Japanese": "選択は常にある。ただその結果を受け入れる準備ができているかが問題なだけだ。"
+            }
+        },
+        {
+            "index": 54,
+            "type": "Dialogue",
+            "speaker": "MAFTEAH_SHELMON",
+            "text": {
+                "Korean": "자, 이제 시작해보자. 첫 번째 목표는 나무의 나라의 천간신, 라시 치우비다.",
+                "English": "Now, let us begin. Your first target is the Tree Country's stem god, Rashi Chiubi.",
+                "Japanese": "さあ、始めよう。最初の目標は木の国の天干神、ラシ・チウビだ。"
+            }
+        },
+        {
+            "index": 55,
+            "type": "Dialogue",
+            "speaker": "MAFTEAH_SHELMON",
+            "text": {
+                "Korean": "그녀는 대림목의 권한을 가지고 있다. 그녀의 인정을 받거나, 아니면...",
+                "English": "She possesses the authority of the Great Forest. Gain her recognition, or else...",
+                "Japanese": "彼女は大林木の権限を持っている。彼女の認証を得るか、あるいは..."
+            }
+        },
+        {
+            "index": 56,
+            "type": "Background",
+            "backgroundImage": "backgrounds/forest_depths.jpg"
+        },
+        {
+            "index": 57,
+            "type": "Narration",
+            "text": {
+                "Korean": "세계가 다시 움직이기 시작했다. 주인공은 어느새 깊은 숲 속에 서 있었다.",
+                "English": "The world began to move again. The protagonist found himself standing in the depths of a forest.",
+                "Japanese": "世界が再び動き始めた。主人公はいつの間にか深い森の中に立っていた。"
+            }
+        },
+        {
+            "index": 58,
+            "type": "Narration",
+            "text": {
+                "Korean": "이곳은 분명 자신이 살던 마을 근처와는 다른 곳이었다. 공기 자체가 마법적 에너지로 가득했다.",
+                "English": "This was certainly different from the area near his village. The very air was filled with magical energy.",
+                "Japanese": "ここは確実に自分が住んでいた村の近くとは違う場所だった。空気そのものが魔法的エネルギーで満ちていた。"
+            }
+        },
+        {
+            "index": 59,
+            "type": "Dialogue",
+            "speaker": "UNKNOWN_VOICE",
+            "text": {
+                "Korean": "또 다른 도전자가 나타났군요...",
+                "English": "Another challenger has appeared...",
+                "Japanese": "また別の挑戦者が現れましたね..."
+            }
+        },
+        {
+            "index": 60,
+            "type": "Narration",
+            "text": {
+                "Korean": "여성의 목소리였다. 바람처럼 부드럽지만, 그 안에는 수천 년의 지혜가 담겨있었다.",
+                "English": "It was a woman's voice. Soft as the wind, yet containing thousands of years of wisdom.",
+                "Japanese": "女性の声だった。風のように柔らかいが、その中には数千年の知恵が込められていた。"
+            }
+        },
+        {
+            "index": 61,
+            "type": "Narration",
+            "text": {
+                "Korean": "운명의 첫 번째 만남이 시작되려 하고 있었다.",
+                "English": "The first fateful encounter was about to begin.",
+                "Japanese": "運命の最初の出会いが始まろうとしていた。"
+            }
+        }
+    ]
+}
+*/
+{
+    "chapter": 1,
+    "episode": 1,
+    "scripts": [
+        {
+            "index": 0,
+            "type": "Background",
+            "backgroundImage": "backgrounds/darkness.jpg"
+        },
+        {
+            "index": 1,
+            "type": "Narration",
+            "text": {
+                "Korean": "섹스1",
+                "English": "Sex1",
+                "Japanese": "Sequsu1"
+            }
+        },
+        {
+            "index": 2,
+            "type": "Narration",
+            "text": {
+                "Korean": "섹스2",
+                "English": "Sex2",
+                "Japanese": "Sequsu2"
+            }
+        },
+        {
+            "index": 3,
+            "type": "Narration",
+            "text": {
+                "Korean": "섹스3",
+                "English": "Sex3",
+                "Japanese": "Sequsu3"
+            }
+        },
+        {
+            "index": 4,
+            "type": "Background",
+            "backgroundImage": "backgrounds/forest_village.jpg"
+        },
+        {
+            "index": 5,
+            "type": "Narration",
+            "text": {
+                "Korean": "섹스4",
+                "English": "Sex4",
+                "Japanese": "Sequsu4"
+            }
+        },
+        {
+            "index": 6,
+            "type": "Narration",
+            "text": {
+                "Korean": "섹스5",
+                "English": "Sex5",
+                "Japanese": "Sequsu5"
+            }
+        },
+        {
+            "index": 7,
+            "type": "Background",
+            "backgroundImage": "backgrounds/dream_sequence.jpg"
+        },
+        {
+            "index": 8,
+            "type": "Narration",
+            "text": {
+                "Korean": "섹스6",
+                "English": "Sex6",
+                "Japanese": "Sequsu6"
+            }
+        },
+        {
+            "index": 9,
+            "type": "Dialogue",
+            "speaker": "UNKNOWN_VOICE",
+            "text": {
+                "Korean": "섹스7",
+                "English": "Sex7",
+                "Japanese": "Sequsu7"
+            }
+        },
+        {
+            "index": 10,
+            "type": "Dialogue",
+            "speaker": "UNKNOWN_VOICE",
+            "text": {
+                "Korean": "섹스8",
+                "English": "Sex8",
+                "Japanese": "Sequsu8"
+            }
+        },
+        {
+            "index": 11,
+            "type": "Narration",
+            "text": {
+                "Korean": "섹스9",
+                "English": "Sex9",
+                "Japanese": "Sequsu9"
+            }
+        },
+        {
+            "index": 12,
+            "type": "Narration",
+            "text": {
+                "Korean": "섹스10",
+                "English": "Sex10",
+                "Japanese": "Sequsu10"
+            }
+        },
+        {
+            "index": 13,
+            "type": "Background",
+            "backgroundImage": "backgrounds/village_morning.jpg"
+        },
+        {
+            "index": 14,
+            "type": "Narration",
+            "text": {
+                "Korean": "섹스11",
+                "English": "Sex11",
+                "Japanese": "Sequsu11"
+            }
+        },
+        {
+            "index": 15,
+            "type": "Dialogue",
+            "speaker": "UNKNOWN_VOICE",
+            "text": {
+                "Korean": "섹스12",
+                "English": "Sex12",
+                "Japanese": "Sequsu12"
+            }
+        },
+        {
+            "index": 16,
+            "type": "Narration",
+            "text": {
+                "Korean": "섹스13",
+                "English": "Sex13",
+                "Japanese": "Sequsu13"
+            }
+        },
+        {
+            "index": 17,
+            "type": "Background",
+            "backgroundImage": "backgrounds/mysterious_light.jpg"
+        },
+        {
+            "index": 18,
+            "type": "Narration",
+            "text": {
+                "Korean": "섹스14",
+                "English": "Sex14",
+                "Japanese": "Sequsu14"
+            }
+        },
+        {
+            "index": 19,
+            "type": "Choice",
+            "choices": [
+                {
+                    "text": {
+                        "Korean": "섹스섹스",
+                        "English": "SexSex",
+                        "Japanese": "SequsuSequsu"
+                    },
+                    "nextScriptIndex": 20
+                },
+                {
+                    "text": {
+                        "Korean": "섹스섹스섹스",
+                        "English": "SexSexSex",
+                        "Japanese": "SequsuSequsuSequsu"
+                    },
+                    "nextScriptIndex": 21
+                },
+                {
+                    "text": {
+                        "Korean": "섹스섹스섹스섹스",
+                        "English": "SexSexSexSex",
+                        "Japanese": "SequsuSequsuSequsuSequsu"
+                    },
+                    "nextScriptIndex": 22
+                }
+            ]
+        },
+        {
+            "index": 20,
+            "type": "Narration",
+            "text": {
+                "Korean": "섹스섹스",
+                "English": "SexSex",
+                "Japanese": "SequsuSequsu"
+            }
+        },
+        {
+            "index": 21,
+            "type": "Narration",
+            "text": {
+                "Korean": "섹스섹스섹스",
+                "English": "SexSexSex",
+                "Japanese": "SequsuSequsuSequsu"
+            }
+        },
+        {
+            "index": 22,
+            "type": "Narration",
+            "text": {
+                "Korean": "섹스섹스섹스섹스",
+                "English": "SexSexSexSex",
+                "Japanese": "SequsuSequsuSequsuSequsu"
+            }
+        },
+        {
+            "index": 23,
+            "type": "Narration",
+            "text": {
+                "Korean": "섹스15",
+                "English": "Sex15",
+                "Japanese": "Sequsu15"
+            }
+        }
+    ]
+}

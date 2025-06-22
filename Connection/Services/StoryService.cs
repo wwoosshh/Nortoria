@@ -21,7 +21,7 @@ namespace Connection.Services
             if (!Directory.Exists(_scriptsFolder))
             {
                 Directory.CreateDirectory(_scriptsFolder);
-                CreateSampleStory();
+                CreateChapterStructure();
             }
         }
 
@@ -36,7 +36,7 @@ namespace Connection.Services
 
                 if (!File.Exists(chaptersFile))
                 {
-                    CreateSampleStory();
+                    CreateChapterStructure();
                 }
 
                 var jsonContent = await File.ReadAllTextAsync(chaptersFile);
@@ -134,26 +134,231 @@ namespace Connection.Services
         }
 
         /// <summary>
-        /// 샘플 스토리를 생성합니다
+        /// 챕터 구조만 생성합니다 (스크립트는 별도로 작성)
         /// </summary>
-        private void CreateSampleStory()
+        private void CreateChapterStructure()
         {
-            // 샘플 챕터 구조 생성
+            // 챕터 구조 생성 (10개 나라 + 추가 챕터들)
             var chapters = new List<StoryChapter>
             {
                 new StoryChapter
                 {
                     ChapterNumber = 1,
-                    Title = "프롤로그",
+                    Title = "노토리얼 메시지",
                     IsUnlocked = true,
                     Episodes = new List<StoryEpisode>
                     {
                         new StoryEpisode
                         {
                             EpisodeNumber = 1,
-                            Title = "시작",
+                            Title = "이야기의 시작",
                             ScriptFile = "Chapter1_Episode1.json",
                             IsUnlocked = true
+                        },
+                        new StoryEpisode
+                        {
+                            EpisodeNumber = 2,
+                            Title = "나무의 나라로",
+                            ScriptFile = "Chapter1_Episode2.json",
+                            IsUnlocked = false
+                        },
+                        new StoryEpisode
+                        {
+                            EpisodeNumber = 3,
+                            Title = "라시 치우비와의 만남",
+                            ScriptFile = "Chapter1_Episode3.json",
+                            IsUnlocked = false
+                        },
+                        new StoryEpisode
+                        {
+                            EpisodeNumber = 4,
+                            Title = "첫 번째 시험",
+                            ScriptFile = "Chapter1_Episode4.json",
+                            IsUnlocked = false
+                        },
+                        new StoryEpisode
+                        {
+                            EpisodeNumber = 5,
+                            Title = "나무의 권한",
+                            ScriptFile = "Chapter1_Episode5.json",
+                            IsUnlocked = false
+                        }
+                    }
+                },
+                new StoryChapter
+                {
+                    ChapterNumber = 2,
+                    Title = "풀의 나라",
+                    IsUnlocked = false,
+                    Episodes = new List<StoryEpisode>
+                    {
+                        new StoryEpisode
+                        {
+                            EpisodeNumber = 1,
+                            Title = "세밀리아 시밀리의 영역",
+                            ScriptFile = "Chapter2_Episode1.json",
+                            IsUnlocked = false
+                        }
+                        // 추후 추가 예정
+                    }
+                },
+                new StoryChapter
+                {
+                    ChapterNumber = 3,
+                    Title = "태양의 나라",
+                    IsUnlocked = false,
+                    Episodes = new List<StoryEpisode>
+                    {
+                        new StoryEpisode
+                        {
+                            EpisodeNumber = 1,
+                            Title = "그루빗의 시험",
+                            ScriptFile = "Chapter3_Episode1.json",
+                            IsUnlocked = false
+                        }
+                    }
+                },
+                new StoryChapter
+                {
+                    ChapterNumber = 4,
+                    Title = "촛불의 나라",
+                    IsUnlocked = false,
+                    Episodes = new List<StoryEpisode>
+                    {
+                        new StoryEpisode
+                        {
+                            EpisodeNumber = 1,
+                            Title = "아세르의 마을",
+                            ScriptFile = "Chapter4_Episode1.json",
+                            IsUnlocked = false
+                        }
+                    }
+                },
+                new StoryChapter
+                {
+                    ChapterNumber = 5,
+                    Title = "태산의 나라",
+                    IsUnlocked = false,
+                    Episodes = new List<StoryEpisode>
+                    {
+                        new StoryEpisode
+                        {
+                            EpisodeNumber = 1,
+                            Title = "하츄비의 산",
+                            ScriptFile = "Chapter5_Episode1.json",
+                            IsUnlocked = false
+                        }
+                    }
+                },
+                new StoryChapter
+                {
+                    ChapterNumber = 6,
+                    Title = "정원의 나라",
+                    IsUnlocked = false,
+                    Episodes = new List<StoryEpisode>
+                    {
+                        new StoryEpisode
+                        {
+                            EpisodeNumber = 1,
+                            Title = "아츠미의 정원",
+                            ScriptFile = "Chapter6_Episode1.json",
+                            IsUnlocked = false
+                        }
+                    }
+                },
+                new StoryChapter
+                {
+                    ChapterNumber = 7,
+                    Title = "총칼의 나라",
+                    IsUnlocked = false,
+                    Episodes = new List<StoryEpisode>
+                    {
+                        new StoryEpisode
+                        {
+                            EpisodeNumber = 1,
+                            Title = "치리프 강의 결투",
+                            ScriptFile = "Chapter7_Episode1.json",
+                            IsUnlocked = false
+                        }
+                    }
+                },
+                new StoryChapter
+                {
+                    ChapterNumber = 8,
+                    Title = "보석의 나라",
+                    IsUnlocked = false,
+                    Episodes = new List<StoryEpisode>
+                    {
+                        new StoryEpisode
+                        {
+                            EpisodeNumber = 1,
+                            Title = "하리프의 보석",
+                            ScriptFile = "Chapter8_Episode1.json",
+                            IsUnlocked = false
+                        }
+                    }
+                },
+                new StoryChapter
+                {
+                    ChapterNumber = 9,
+                    Title = "바다의 나라",
+                    IsUnlocked = false,
+                    Episodes = new List<StoryEpisode>
+                    {
+                        new StoryEpisode
+                        {
+                            EpisodeNumber = 1,
+                            Title = "헤리쉬의 바다",
+                            ScriptFile = "Chapter9_Episode1.json",
+                            IsUnlocked = false
+                        }
+                    }
+                },
+                new StoryChapter
+                {
+                    ChapterNumber = 10,
+                    Title = "계곡의 나라",
+                    IsUnlocked = false,
+                    Episodes = new List<StoryEpisode>
+                    {
+                        new StoryEpisode
+                        {
+                            EpisodeNumber = 1,
+                            Title = "고리프의 계곡",
+                            ScriptFile = "Chapter10_Episode1.json",
+                            IsUnlocked = false
+                        }
+                    }
+                },
+                new StoryChapter
+                {
+                    ChapterNumber = 11,
+                    Title = "초월자의 길",
+                    IsUnlocked = false,
+                    Episodes = new List<StoryEpisode>
+                    {
+                        new StoryEpisode
+                        {
+                            EpisodeNumber = 1,
+                            Title = "각성",
+                            ScriptFile = "Chapter11_Episode1.json",
+                            IsUnlocked = false
+                        }
+                    }
+                },
+                new StoryChapter
+                {
+                    ChapterNumber = 12,
+                    Title = "레메게톤의 열쇠",
+                    IsUnlocked = false,
+                    Episodes = new List<StoryEpisode>
+                    {
+                        new StoryEpisode
+                        {
+                            EpisodeNumber = 1,
+                            Title = "셀몬과의 최종 결전",
+                            ScriptFile = "Chapter12_Episode1.json",
+                            IsUnlocked = false
                         }
                     }
                 }
@@ -163,41 +368,7 @@ namespace Connection.Services
             var chaptersJson = JsonConvert.SerializeObject(chapters, Formatting.Indented);
             File.WriteAllText(Path.Combine(_scriptsFolder, "chapters.json"), chaptersJson);
 
-            // 샘플 스크립트 생성
-            var sampleScript = new ScriptData
-            {
-                Chapter = 1,
-                Episode = 1,
-                Scripts = new List<ScriptLine>
-                {
-                    new ScriptLine
-                    {
-                        Index = 0,
-                        Type = ScriptType.Narration,
-                        Text = new Dictionary<Language, string>
-                        {
-                            { Language.Korean, "Connection 게임에 오신 것을 환영합니다." },
-                            { Language.English, "Welcome to Connection game." },
-                            { Language.Japanese, "Connectionゲームへようこそ。" }
-                        }
-                    },
-                    new ScriptLine
-                    {
-                        Index = 1,
-                        Type = ScriptType.Dialogue,
-                        Speaker = "시스템",
-                        Text = new Dictionary<Language, string>
-                        {
-                            { Language.Korean, "이것은 샘플 스크립트입니다. 스페이스바를 눌러 진행하세요." },
-                            { Language.English, "This is a sample script. Press spacebar to continue." },
-                            { Language.Japanese, "これはサンプルスクリプトです。スペースバーを押して進んでください。" }
-                        }
-                    }
-                }
-            };
-
-            var scriptJson = JsonConvert.SerializeObject(sampleScript, Formatting.Indented);
-            File.WriteAllText(Path.Combine(_scriptsFolder, "Chapter1_Episode1.json"), scriptJson);
+            Console.WriteLine("챕터 구조가 생성되었습니다. 이제 각 Chapter*_Episode*.json 파일을 직접 작성하세요.");
         }
     }
 }

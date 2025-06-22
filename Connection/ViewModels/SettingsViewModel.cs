@@ -39,7 +39,12 @@ namespace Connection.ViewModels
 
         #region 다국어 지원 프로퍼티들
 
-        public string SettingsWindowTitle => LocalizationHelper.GetLocalizedString("Settings", _currentLanguage);
+        private string _settingsWindowTitle;
+        public string SettingsWindowTitle
+        {
+            get => _settingsWindowTitle ?? LocalizationHelper.GetLocalizedString("Settings", _currentLanguage);
+            private set => SetProperty(ref _settingsWindowTitle, value);
+        }
 
         // 탭 헤더
         public string GraphicsTabText => LocalizationHelper.GetLocalizedString("Graphics", _currentLanguage);
@@ -85,8 +90,21 @@ namespace Connection.ViewModels
 
         // 기타 설정 라벨
         public string GameInfoText => LocalizationHelper.GetLocalizedString("GameInfo", _currentLanguage);
-        public string DeveloperText => LocalizationHelper.GetLocalizedString("Developer", _currentLanguage);
-        public string EngineText => LocalizationHelper.GetLocalizedString("Engine", _currentLanguage);
+
+        private string _developerText;
+        public string DeveloperText
+        {
+            get => _developerText ?? LocalizationHelper.GetLocalizedString("Developer", _currentLanguage);
+            private set => SetProperty(ref _developerText, value);
+        }
+
+        private string _engineText;
+        public string EngineText
+        {
+            get => _engineText ?? LocalizationHelper.GetLocalizedString("Engine", _currentLanguage);
+            private set => SetProperty(ref _engineText, value);
+        }
+
         public string CopyrightInfoText => LocalizationHelper.GetLocalizedString("CopyrightInfo", _currentLanguage);
         public string ResetToDefaultText => LocalizationHelper.GetLocalizedString("ResetToDefault", _currentLanguage);
 
@@ -275,6 +293,13 @@ namespace Connection.ViewModels
         /// </summary>
         private void UpdateUITexts()
         {
+            // 윈도우 제목 업데이트
+            SettingsWindowTitle = LocalizationHelper.GetLocalizedString("Settings", _currentLanguage);
+
+            // 기타 탭 텍스트 업데이트
+            DeveloperText = LocalizationHelper.GetLocalizedString("Developer", _currentLanguage);
+            EngineText = LocalizationHelper.GetLocalizedString("Engine", _currentLanguage);
+
             // 탭 헤더 업데이트
             OnPropertyChanged(nameof(GraphicsTabText));
             OnPropertyChanged(nameof(ControlsTabText));
