@@ -136,7 +136,7 @@ namespace Connection.ViewModels
         #endregion
 
         /// <summary>
-        /// 스크립트 효과를 적용합니다
+        /// 향상된 스크립트 효과 적용
         /// </summary>
         private void ApplyScriptEffects(List<ScriptEffect> effects)
         {
@@ -144,12 +144,21 @@ namespace Connection.ViewModels
 
             foreach (var effect in effects)
             {
+                // 확률 체크
+                if (effect.Probability < 1.0f)
+                {
+                    var random = new Random();
+                    if (random.NextSingle() > effect.Probability)
+                        continue; // 확률에 실패하면 효과 적용 안함
+                }
+
+                // 지연 실행이 있으면 추후 구현 (현재는 즉시 실행)
                 ApplySingleEffect(effect);
             }
         }
 
         /// <summary>
-        /// 단일 효과를 적용합니다
+        /// 향상된 단일 효과 적용
         /// </summary>
         private void ApplySingleEffect(ScriptEffect effect)
         {
@@ -158,79 +167,134 @@ namespace Connection.ViewModels
 
             switch (effect.Type.ToLower())
             {
+                case "flag":
+                    ApplyFlagEffect(effect, ref message);
+                    break;
+
+                case "relationship":
+                    ApplyRelationshipEffect(effect, ref message);
+                    break;
+
+                case "character_state":
+                    ApplyCharacterStateEffect(effect, ref message);
+                    break;
+
+                case "route_progress":
+                    ApplyRouteProgressEffect(effect, ref message);
+                    break;
+
                 case "item":
-                    if (effect.Action.ToLower() == "give")
-                    {
-                        _userData.Inventory.AddItem(effect.Target, effect.Amount);
-                        if (!effect.Silent)
-                        {
-                            message = effect.Message.GetValueOrDefault(gameLanguage,
-                                $"{effect.Target} x{effect.Amount}을(를) 획득했습니다!");
-                        }
-                    }
-                    else if (effect.Action.ToLower() == "take")
-                    {
-                        if (_userData.Inventory.HasItem(effect.Target, effect.Amount))
-                        {
-                            // 아이템 제거 로직 추가 필요
-                            RemoveItem(effect.Target, effect.Amount);
-                            if (!effect.Silent)
-                            {
-                                message = effect.Message.GetValueOrDefault(gameLanguage,
-                                    $"{effect.Target} x{effect.Amount}을(를) 잃었습니다.");
-                            }
-                        }
-                        else
-                        {
-                            message = "필요한 아이템이 부족합니다.";
-                        }
-                    }
+                    ApplyItemEffect(effect, ref message);
                     break;
 
                 case "currency":
-                    if (effect.Action.ToLower() == "give")
-                    {
-                        _userData.Inventory.Currency += effect.Amount;
-                        if (!effect.Silent)
-                        {
-                            message = effect.Message.GetValueOrDefault(gameLanguage,
-                                $"{effect.Amount} 골드를 획득했습니다!");
-                        }
-                    }
-                    else if (effect.Action.ToLower() == "take")
-                    {
-                        if (_userData.Inventory.Currency >= effect.Amount)
-                        {
-                            _userData.Inventory.Currency -= effect.Amount;
-                            if (!effect.Silent)
-                            {
-                                message = effect.Message.GetValueOrDefault(gameLanguage,
-                                    $"{effect.Amount} 골드를 잃었습니다.");
-                            }
-                        }
-                        else
-                        {
-                            message = "골드가 부족합니다.";
-                        }
-                    }
-                    break;
-
-                case "flag":
-                    // 스토리 플래그 설정 (추후 구현)
-                    if (!effect.Silent)
-                    {
-                        message = effect.Message.GetValueOrDefault(gameLanguage, "");
-                    }
+                    ApplyCurrencyEffect(effect, ref message);
                     break;
             }
 
             // 메시지 표시
-            if (!string.IsNullOrEmpty(message))
+            if (!effect.Silent && !string.IsNullOrEmpty(message))
             {
-                MessageBox.Show(message, "알림", MessageBoxButton.OK, MessageBoxImage.Information);
+                var displayMessage = effect.Message.GetValueOrDefault(gameLanguage, message);
+                MessageBox.Show(displayMessage, "알림", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
+        private void ApplyFlagEffect(ScriptEffect effect, ref string message)
+        {
+            switch (effect.Action.ToLower())
+            {
+                case "set":
+                    _userData.SetFlag(effect.Target, effect.Amount);
+                    message = $"플래그 '{effect.Target}'를 {effect.Amount}로 설정했습니다.";
+                    break;
+                case "increase":
+                    _userData.IncrementFlag(effect.Target, effect.Amount);
+                    message = $"플래그 '{effect.Target}'가 {effect.Amount} 증가했습니다.";
+                    break;
+                case "decrease":
+                    _userData.IncrementFlag(effect.Target, -effect.Amount);
+                    message = $"플래그 '{effect.Target}'가 {effect.Amount} 감소했습니다.";
+                    break;
             }
         }
 
+        private void ApplyRelationshipEffect(ScriptEffect effect, ref string message)
+        {
+            switch (effect.Action.ToLower())
+            {
+                case "set":
+                    _userData.SetRelationship(effect.Target, effect.Amount);
+                    message = $"{effect.Target}와의 관계가 {effect.Amount}가 되었습니다.";
+                    break;
+                case "increase":
+                    _userData.ChangeRelationship(effect.Target, effect.Amount);
+                    message = $"{effect.Target}와의 관계가 {effect.Amount} 향상되었습니다.";
+                    break;
+                case "decrease":
+                    _userData.ChangeRelationship(effect.Target, -effect.Amount);
+                    message = $"{effect.Target}와의 관계가 {effect.Amount} 악화되었습니다.";
+                    break;
+            }
+        }
+
+        private void ApplyCharacterStateEffect(ScriptEffect effect, ref string message)
+        {
+            switch (effect.Action.ToLower())
+            {
+                case "set_alive":
+                    _userData.SetCharacterAlive(effect.Target, effect.Amount > 0);
+                    message = effect.Amount > 0 ?
+                        $"{effect.Target}를 구했습니다!" :
+                        $"{effect.Target}를 구하지 못했습니다...";
+                    break;
+            }
+        }
+
+        private void ApplyRouteProgressEffect(ScriptEffect effect, ref string message)
+        {
+            switch (effect.Action.ToLower())
+            {
+                case "set":
+                    _userData.SetRouteProgress(effect.Target, effect.Amount);
+                    message = $"{effect.Target} 루트 진행도가 {effect.Amount}가 되었습니다.";
+                    break;
+                case "increase":
+                    var currentProgress = _userData.GetRouteProgress(effect.Target);
+                    _userData.SetRouteProgress(effect.Target, currentProgress + effect.Amount);
+                    message = $"{effect.Target} 루트가 진행되었습니다.";
+                    break;
+            }
+        }
+
+        private void ApplyItemEffect(ScriptEffect effect, ref string message)
+        {
+            switch (effect.Action.ToLower())
+            {
+                case "give":
+                    _userData.Inventory.AddItem(effect.Target, effect.Amount);
+                    message = $"{effect.Target} x{effect.Amount}을(를) 획득했습니다!";
+                    break;
+                case "take":
+                    RemoveItem(effect.Target, effect.Amount);
+                    message = $"{effect.Target} x{effect.Amount}을(를) 잃었습니다.";
+                    break;
+            }
+        }
+
+        private void ApplyCurrencyEffect(ScriptEffect effect, ref string message)
+        {
+            switch (effect.Action.ToLower())
+            {
+                case "give":
+                    _userData.Inventory.Currency += effect.Amount;
+                    message = $"{effect.Amount} 골드를 획득했습니다!";
+                    break;
+                case "take":
+                    _userData.Inventory.Currency = Math.Max(0, _userData.Inventory.Currency - effect.Amount);
+                    message = $"{effect.Amount} 골드를 잃었습니다.";
+                    break;
+            }
+        }
         /// <summary>
         /// 아이템을 제거합니다
         /// </summary>
@@ -332,8 +396,9 @@ namespace Connection.ViewModels
             // 모든 스크립트를 확인했지만 조건을 만족하는 것이 없으면 에피소드 완료
             await CompleteCurrentEpisodeAsync();
         }
+
         /// <summary>
-        /// 현재 스크립트를 실행합니다
+        /// 현재 스크립트를 실행합니다 (조건부 텍스트 지원)
         /// </summary>
         private async Task ExecuteCurrentScriptAsync(ScriptLine currentLine)
         {
@@ -344,18 +409,19 @@ namespace Connection.ViewModels
             {
                 case ScriptType.Dialogue:
                 case ScriptType.Narration:
-                    if (currentLine.Type == ScriptType.Dialogue && !string.IsNullOrEmpty(currentLine.Speaker))
+                    // 조건에 맞는 텍스트 선택
+                    var (speaker, dialogueText) = GetConditionalText(currentLine, gameLanguage);
+
+                    if (currentLine.Type == ScriptType.Dialogue && !string.IsNullOrEmpty(speaker))
                     {
-                        CurrentSpeaker = LocalizationHelper.GetCharacterName(currentLine.Speaker, gameLanguage);
+                        CurrentSpeaker = LocalizationHelper.GetCharacterName(speaker, gameLanguage);
                     }
                     else
                     {
                         CurrentSpeaker = "";
                     }
 
-                    _fullDialogueText = currentLine.Text.GetValueOrDefault(gameLanguage,
-                        currentLine.Text.Values.FirstOrDefault() ?? "");
-
+                    _fullDialogueText = dialogueText;
                     StartTypingAnimation();
 
                     // 스크립트 효과 적용
@@ -383,6 +449,15 @@ namespace Connection.ViewModels
                 case ScriptType.Choice:
                     await DisplayChoicesAsync(currentLine);
                     return;
+
+                case ScriptType.Conditional:
+                    // 조건부 분기 처리
+                    if (CheckScriptConditions(currentLine.Conditions))
+                    {
+                        ApplyScriptEffects(currentLine.Effects);
+                    }
+                    await NextScriptAsync();
+                    return;
             }
 
             // 배경/캐릭터 이미지 업데이트
@@ -405,16 +480,76 @@ namespace Connection.ViewModels
         private bool CheckScriptConditions(List<ScriptCondition> conditions)
         {
             if (conditions == null || conditions.Count == 0)
-                return true; // 조건이 없으면 항상 실행
+                return true;
 
-            // 모든 조건을 만족해야 함
             foreach (var condition in conditions)
             {
-                if (!CheckSingleCondition(condition))
-                    return false;
+                bool conditionResult = CheckConditionWithSubConditions(condition);
+
+                // 첫 번째 조건이거나 AND 연산인 경우
+                if (conditions.IndexOf(condition) == 0)
+                {
+                    if (!conditionResult) return false;
+                }
+                else
+                {
+                    // 이전 조건과의 논리 연산
+                    var prevCondition = conditions[conditions.IndexOf(condition) - 1];
+                    if (prevCondition.LogicOperator?.ToUpper() == "OR")
+                    {
+                        // OR 연산: 하나라도 참이면 통과
+                        if (conditionResult) return true;
+                    }
+                    else
+                    {
+                        // AND 연산 (기본값): 모두 참이어야 함
+                        if (!conditionResult) return false;
+                    }
+                }
             }
 
             return true;
+        }
+        /// <summary>
+        /// 하위 조건을 포함한 조건 확인
+        /// </summary>
+        private bool CheckConditionWithSubConditions(ScriptCondition condition)
+        {
+            bool mainResult = CheckSingleCondition(condition);
+
+            if (condition.SubConditions == null || condition.SubConditions.Count == 0)
+                return mainResult;
+
+            bool subResult = CheckScriptConditions(condition.SubConditions);
+
+            return condition.LogicOperator?.ToUpper() == "OR" ?
+                   mainResult || subResult :
+                   mainResult && subResult;
+        }
+        /// <summary>
+        /// 현재 스크립트에서 조건에 맞는 텍스트를 선택합니다
+        /// </summary>
+        private (string speaker, string text) GetConditionalText(ScriptLine currentLine, Language gameLanguage)
+        {
+            // 대체 텍스트가 있는지 확인
+            if (currentLine.AlternativeTexts != null && currentLine.AlternativeTexts.Count > 0)
+            {
+                foreach (var altText in currentLine.AlternativeTexts)
+                {
+                    if (CheckScriptConditions(altText.Conditions))
+                    {
+                        var speaker = !string.IsNullOrEmpty(altText.Speaker) ? altText.Speaker : currentLine.Speaker;
+                        var text = altText.Text.GetValueOrDefault(gameLanguage,
+                            altText.Text.Values.FirstOrDefault() ?? "");
+                        return (speaker, text);
+                    }
+                }
+            }
+
+            // 기본 텍스트 반환
+            var defaultText = currentLine.Text.GetValueOrDefault(gameLanguage,
+                currentLine.Text.Values.FirstOrDefault() ?? "");
+            return (currentLine.Speaker, defaultText);
         }
 
         /// <summary>
@@ -422,46 +557,89 @@ namespace Connection.ViewModels
         /// </summary>
         private bool CheckSingleCondition(ScriptCondition condition)
         {
-            switch (condition.Type.ToLower())
+            try
             {
-                case "flag":
-                    int flagValue = _userData.GetFlag(condition.Target);
-                    if (condition.Operator.ToLower() == "equals")
-                    {
-                        return flagValue == int.Parse(condition.Value);
-                    }
-                    else if (condition.Operator.ToLower() == "true")
-                    {
-                        return flagValue > 0;
-                    }
-                    else if (condition.Operator.ToLower() == "false")
-                    {
-                        return flagValue == 0;
-                    }
-                    break;
+                switch (condition.Type.ToLower())
+                {
+                    case "flag":
+                        int flagValue = _userData.GetFlag(condition.Target);
+                        return condition.Operator.ToLower() switch
+                        {
+                            "equals" => flagValue == int.Parse(condition.Value),
+                            "greater" => flagValue > int.Parse(condition.Value),
+                            "less" => flagValue < int.Parse(condition.Value),
+                            "greater_equal" => flagValue >= int.Parse(condition.Value),
+                            "less_equal" => flagValue <= int.Parse(condition.Value),
+                            "true" => flagValue > 0,
+                            "false" => flagValue == 0,
+                            _ => true
+                        };
 
-                case "item":
-                    int itemCount = _userData.Inventory.GetItemCount(condition.Target);
-                    int requiredCount = int.Parse(condition.Value);
-                    return itemCount >= requiredCount;
+                    case "item":
+                        int itemCount = _userData.Inventory.GetItemCount(condition.Target);
+                        int requiredCount = int.Parse(condition.Value);
+                        return condition.Operator.ToLower() switch
+                        {
+                            "has" => itemCount >= requiredCount,
+                            "equals" => itemCount == requiredCount,
+                            "greater" => itemCount > requiredCount,
+                            "less" => itemCount < requiredCount,
+                            _ => itemCount >= requiredCount
+                        };
 
-                case "relationship":
-                    int relationshipValue = _userData.GetRelationship(condition.Target);
-                    int requiredRelationship = int.Parse(condition.Value);
+                    case "relationship":
+                        int relationshipValue = _userData.GetRelationship(condition.Target);
+                        int requiredRelationship = int.Parse(condition.Value);
+                        return condition.Operator.ToLower() switch
+                        {
+                            "greater" => relationshipValue > requiredRelationship,
+                            "less" => relationshipValue < requiredRelationship,
+                            "equals" => relationshipValue == requiredRelationship,
+                            "greater_equal" => relationshipValue >= requiredRelationship,
+                            "less_equal" => relationshipValue <= requiredRelationship,
+                            _ => relationshipValue >= requiredRelationship
+                        };
 
-                    return condition.Operator.ToLower() switch
-                    {
-                        "greater" => relationshipValue > requiredRelationship,
-                        "less" => relationshipValue < requiredRelationship,
-                        "equals" => relationshipValue == requiredRelationship,
-                        _ => true
-                    };
+                    case "choice":
+                        // 특정 선택을 했는지 확인
+                        return _userData.HasMadeChoice(condition.Target);
 
-                default:
-                    return true;
+                    case "character_alive":
+                        return _userData.IsCharacterAlive(condition.Target);
+
+                    case "route_progress":
+                        int routeProgress = _userData.GetRouteProgress(condition.Target);
+                        int requiredProgress = int.Parse(condition.Value);
+                        return condition.Operator.ToLower() switch
+                        {
+                            "greater" => routeProgress > requiredProgress,
+                            "less" => routeProgress < requiredProgress,
+                            "equals" => routeProgress == requiredProgress,
+                            "greater_equal" => routeProgress >= requiredProgress,
+                            "less_equal" => routeProgress <= requiredProgress,
+                            _ => routeProgress >= requiredProgress
+                        };
+
+                    case "currency":
+                        long currency = _userData.Inventory.Currency;
+                        long requiredCurrency = long.Parse(condition.Value);
+                        return condition.Operator.ToLower() switch
+                        {
+                            "has" => currency >= requiredCurrency,
+                            "equals" => currency == requiredCurrency,
+                            "greater" => currency > requiredCurrency,
+                            "less" => currency < requiredCurrency,
+                            _ => currency >= requiredCurrency
+                        };
+
+                    default:
+                        return true;
+                }
             }
-
-            return false;
+            catch
+            {
+                return false;
+            }
         }
 
         /// <summary>
@@ -570,6 +748,9 @@ namespace Connection.ViewModels
             return null;
         }
 
+        /// <summary>
+        /// 선택지를 표시합니다 (조건 확인 포함)
+        /// </summary>
         private async Task DisplayChoicesAsync(ScriptLine choiceLine)
         {
             _currentChoices.Clear();
@@ -577,27 +758,104 @@ namespace Connection.ViewModels
 
             foreach (var choice in choiceLine.Choices)
             {
+                // 선택지 표시 조건 확인
+                if (!CheckScriptConditions(choice.DisplayConditions))
+                    continue;
+
+                // 선택지 비용 확인
+                if (!CanAffordChoice(choice))
+                    continue;
+
                 var choiceText = choice.Text.GetValueOrDefault(gameLanguage,
                     choice.Text.Values.FirstOrDefault() ?? "");
+
+                // 비용이 있는 경우 텍스트에 추가
+                if (choice.Cost != null)
+                {
+                    var costText = GetChoiceCostText(choice.Cost, gameLanguage);
+                    if (!string.IsNullOrEmpty(costText))
+                        choiceText += $" {costText}";
+                }
 
                 _currentChoices.Add(new ChoiceViewModel
                 {
                     Text = choiceText,
-                    SelectCommand = new AsyncRelayCommand(() => SelectChoiceAsync(choice.NextScriptIndex))
+                    Choice = choice, // Choice 객체 저장
+                    SelectCommand = new AsyncRelayCommand(() => SelectChoiceAsync(choice))
                 });
             }
 
             OnPropertyChanged(nameof(ChoicesVisibility));
         }
 
-        private async Task SelectChoiceAsync(int nextScriptIndex)
+        /// <summary>
+        /// 선택지 비용을 지불할 수 있는지 확인
+        /// </summary>
+        private bool CanAffordChoice(Choice choice)
         {
-            // 선택한 choice 찾기
-            var currentLine = _currentScript.Scripts[_currentScriptIndex];
-            var selectedChoice = currentLine.Choices.FirstOrDefault(c => c.NextScriptIndex == nextScriptIndex);
+            if (choice.Cost == null) return true;
+
+            // 화폐 확인
+            if (choice.Cost.Currency > 0 && _userData.Inventory.Currency < choice.Cost.Currency)
+                return false;
+
+            // 아이템 확인
+            if (choice.Cost.Items != null)
+            {
+                foreach (var item in choice.Cost.Items)
+                {
+                    if (_userData.Inventory.GetItemCount(item.Key) < item.Value)
+                        return false;
+                }
+            }
+
+            return true;
+        }
+
+        /// <summary>
+        /// 선택지 비용 텍스트 생성
+        /// </summary>
+        private string GetChoiceCostText(ChoiceCost cost, Language language)
+        {
+            var costParts = new List<string>();
+
+            if (cost.Currency > 0)
+                costParts.Add($"💰{cost.Currency}");
+
+            if (cost.Items != null)
+            {
+                foreach (var item in cost.Items)
+                    costParts.Add($"{item.Key} x{item.Value}");
+            }
+
+            return costParts.Count > 0 ? $"({string.Join(", ", costParts)})" : "";
+        }
+
+        /// <summary>
+        /// 선택지를 선택합니다 (향상된 버전)
+        /// </summary>
+        private async Task SelectChoiceAsync(Choice selectedChoice)
+        {
+            // 선택지 비용 지불
+            if (selectedChoice.Cost != null)
+            {
+                PayChoiceCost(selectedChoice.Cost);
+            }
+
+            // 선택 기록 저장
+            if (!string.IsNullOrEmpty(selectedChoice.Id))
+            {
+                _userData.RecordChoice(
+                    _userData.CurrentStory.Chapter,
+                    _userData.CurrentStory.Episode,
+                    _currentScriptIndex,
+                    _currentChoices.ToList().FindIndex(c => c.Choice == selectedChoice),
+                    selectedChoice.Id
+                );
+            }
 
             // 선택지 효과 적용
-            if (selectedChoice?.Effects != null)
+            if (selectedChoice.Effects != null && selectedChoice.Effects.Count > 0)
             {
                 ApplyScriptEffects(selectedChoice.Effects);
             }
@@ -605,11 +863,37 @@ namespace Connection.ViewModels
             _currentChoices.Clear();
             OnPropertyChanged(nameof(ChoicesVisibility));
 
-            _currentScriptIndex = nextScriptIndex;
+            _currentScriptIndex = selectedChoice.NextScriptIndex;
             _userData.CurrentStory.ScriptIndex = _currentScriptIndex;
 
             await _dataService.SaveUserDataAsync(_userData);
             await DisplayCurrentScriptAsync();
+        }
+        /// <summary>
+        /// 선택지 비용을 지불합니다
+        /// </summary>
+        private void PayChoiceCost(ChoiceCost cost)
+        {
+            // 화폐 지불
+            if (cost.Currency > 0)
+            {
+                _userData.Inventory.Currency -= cost.Currency;
+            }
+
+            // 아이템 소비
+            if (cost.Items != null)
+            {
+                foreach (var item in cost.Items)
+                {
+                    var currentCount = _userData.Inventory.GetItemCount(item.Key);
+                    var newCount = currentCount - item.Value;
+
+                    if (newCount <= 0)
+                        _userData.Inventory.Items.Remove(item.Key);
+                    else
+                        _userData.Inventory.Items[item.Key] = newCount;
+                }
+            }
         }
 
         private async Task NextScriptAsync()
@@ -873,10 +1157,10 @@ namespace Connection.ViewModels
 
         #endregion
     }
-
     public class ChoiceViewModel
     {
         public string Text { get; set; }
+        public Choice Choice { get; set; } // 추가: Choice 객체 저장
         public IAsyncRelayCommand SelectCommand { get; set; }
     }
 }

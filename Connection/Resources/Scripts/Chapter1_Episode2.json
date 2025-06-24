@@ -1,0 +1,375 @@
+{
+    "chapter": 1,
+    "episode": 2,
+    "scripts": [
+        {
+            "index": 0,
+            "type": "Background",
+            "backgroundImage": "backgrounds/town_square.jpg"
+        },
+        {
+            "index": 1,
+            "type": "Narration",
+            "text": {
+                "Korean": "며칠이 지나 마을 광장에 도착했다.",
+                "English": "A few days later, you arrived at the town square.",
+                "Japanese": "数日後、町の広場に到着した。"
+            }
+        },
+        {
+            "index": 2,
+            "type": "Conditional",
+            "conditions": [
+                {
+                    "type": "character_alive",
+                    "target": "HEROINE_ARIA",
+                    "operator": "true",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "index": 3,
+            "type": "Character",
+            "characterImage": "characters/aria_happy.png",
+            "conditions": [
+                {
+                    "type": "character_alive",
+                    "target": "HEROINE_ARIA",
+                    "operator": "true",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "index": 4,
+            "type": "Dialogue",
+            "speaker": "HEROINE_ARIA",
+            "text": {
+                "Korean": "아! 당신이군요! 정말 반가워요!",
+                "English": "Ah! It's you! I'm so glad to see you!",
+                "Japanese": "あ！あなたですね！本当に嬉しいです！"
+            },
+            "conditions": [
+                {
+                    "type": "character_alive",
+                    "target": "HEROINE_ARIA",
+                    "operator": "true",
+                    "value": "1"
+                }
+            ],
+            "alternativeTexts": [
+                {
+                    "conditions": [
+                        {
+                            "type": "choice",
+                            "target": "save_aria",
+                            "operator": "true",
+                            "value": "1"
+                        }
+                    ],
+                    "speaker": "HEROINE_ARIA",
+                    "text": {
+                        "Korean": "은인이시군요! 그날 일은 평생 잊지 못할 거예요!",
+                        "English": "My savior! I'll never forget what you did that day!",
+                        "Japanese": "恩人ですね！あの日のことは一生忘れません！"
+                    }
+                },
+                {
+                    "conditions": [
+                        {
+                            "type": "choice",
+                            "target": "call_firefighters",
+                            "operator": "true",
+                            "value": "1"
+                        }
+                    ],
+                    "speaker": "HEROINE_ARIA",
+                    "text": {
+                        "Korean": "그날 신고해주신 분이시군요! 덕분에 살았어요!",
+                        "English": "You're the one who called for help that day! Thanks to you, I'm alive!",
+                        "Japanese": "あの日通報してくださった方ですね！おかげで生きています！"
+                    }
+                }
+            ]
+        },
+        {
+            "index": 5,
+            "type": "Narration",
+            "text": {
+                "Korean": "아리아는 환한 미소를 지으며 당신에게 다가왔다.",
+                "English": "Aria approached you with a bright smile.",
+                "Japanese": "アリアは明るい笑顔であなたに近づいてきた。"
+            },
+            "conditions": [
+                {
+                    "type": "character_alive",
+                    "target": "HEROINE_ARIA",
+                    "operator": "true",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "index": 6,
+            "type": "Choice",
+            "choices": [
+                {
+                    "id": "aria_conversation",
+                    "text": {
+                        "Korean": "아리아와 대화한다",
+                        "English": "Talk with Aria",
+                        "Japanese": "アリアと会話する"
+                    },
+                    "nextScriptIndex": 7,
+                    "displayConditions": [
+                        {
+                            "type": "character_alive",
+                            "target": "HEROINE_ARIA",
+                            "operator": "true",
+                            "value": "1"
+                        }
+                    ]
+                },
+                {
+                    "id": "aria_gift",
+                    "text": {
+                        "Korean": "아리아에게 선물을 준다",
+                        "English": "Give Aria a gift",
+                        "Japanese": "アリアにプレゼントを渡す"
+                    },
+                    "nextScriptIndex": 12,
+                    "displayConditions": [
+                        {
+                            "type": "character_alive",
+                            "target": "HEROINE_ARIA",
+                            "operator": "true",
+                            "value": "1"
+                        },
+                        {
+                            "type": "relationship",
+                            "target": "HEROINE_ARIA",
+                            "operator": "greater",
+                            "value": "30"
+                        }
+                    ],
+                    "cost": {
+                        "items": {
+                            "flower_bouquet": 1
+                        }
+                    }
+                },
+                {
+                    "id": "continue_walking",
+                    "text": {
+                        "Korean": "그냥 지나간다",
+                        "English": "Just walk past",
+                        "Japanese": "そのまま通り過ぎる"
+                    },
+                    "nextScriptIndex": 20
+                }
+            ],
+            "conditions": [
+                {
+                    "type": "character_alive",
+                    "target": "HEROINE_ARIA",
+                    "operator": "true",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "index": 30,
+            "type": "Narration",
+            "text": {
+                "Korean": "광장은 평소처럼 사람들로 붐볐다.",
+                "English": "The square was bustling with people as usual.",
+                "Japanese": "広場はいつものように人々で賑わっていた。"
+            },
+            "conditions": [
+                {
+                    "type": "character_alive",
+                    "target": "HEROINE_ARIA",
+                    "operator": "false",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "index": 31,
+            "type": "Narration",
+            "text": {
+                "Korean": "하지만 당신의 마음은 여전히 무거웠다. 아리아를 구하지 못한 기억이 떠올랐다.",
+                "English": "But your heart was still heavy. The memory of failing to save Aria came to mind.",
+                "Japanese": "しかしあなたの心はまだ重かった。アリアを救えなかった記憶が蘇った。"
+            },
+            "conditions": [
+                {
+                    "type": "flag",
+                    "target": "aria_abandoned",
+                    "operator": "true",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "index": 32,
+            "type": "Dialogue",
+            "speaker": "PROTAGONIST",
+            "text": {
+                "Korean": "만약 그때 용기를 냈다면... 아리아는 지금 여기서 웃고 있을 텐데...",
+                "English": "If I had been brave that day... Aria would be smiling here now...",
+                "Japanese": "あの時勇気を出していれば...アリアは今ここで笑っているはずなのに..."
+            },
+            "conditions": [
+                {
+                    "type": "flag",
+                    "target": "guilt_level",
+                    "operator": "greater",
+                    "value": "5"
+                }
+            ]
+        },
+        {
+            "index": 33,
+            "type": "Narration",
+            "text": {
+                "Korean": "죄책감이 다시 한번 마음을 짓눌렀다.",
+                "English": "Guilt pressed down on your heart once again.",
+                "Japanese": "罪悪感が再び心を押しつぶした。"
+            },
+            "conditions": [
+                {
+                    "type": "character_alive",
+                    "target": "HEROINE_ARIA",
+                    "operator": "false",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "index": 34,
+            "type": "Choice",
+            "choices": [
+                {
+                    "id": "visit_memorial",
+                    "text": {
+                        "Korean": "아리아의 무덤을 찾아가본다",
+                        "English": "Visit Aria's grave",
+                        "Japanese": "アリアの墓を訪ねてみる"
+                    },
+                    "nextScriptIndex": 35,
+                    "displayConditions": [
+                        {
+                            "type": "character_alive",
+                            "target": "HEROINE_ARIA",
+                            "operator": "false",
+                            "value": "1"
+                        }
+                    ]
+                },
+                {
+                    "id": "try_to_forget",
+                    "text": {
+                        "Korean": "잊으려고 노력한다",
+                        "English": "Try to forget",
+                        "Japanese": "忘れようと努力する"
+                    },
+                    "nextScriptIndex": 40,
+                    "displayConditions": [
+                        {
+                            "type": "character_alive",
+                            "target": "HEROINE_ARIA",
+                            "operator": "false",
+                            "value": "1"
+                        }
+                    ],
+                    "effects": [
+                        {
+                            "type": "flag",
+                            "action": "decrease",
+                            "target": "guilt_level",
+                            "amount": 3
+                        }
+                    ]
+                }
+            ],
+            "conditions": [
+                {
+                    "type": "character_alive",
+                    "target": "HEROINE_ARIA",
+                    "operator": "false",
+                    "value": "1"
+                }
+            ]
+        },
+        {
+            "index": 7,
+            "type": "Dialogue",
+            "speaker": "HEROINE_ARIA",
+            "text": {
+                "Korean": "요즘 어떻게 지내세요? 저는 그날 이후로 새로운 마음가짐으로 살고 있어요.",
+                "English": "How have you been lately? I've been living with a new mindset since that day.",
+                "Japanese": "最近どうお過ごしですか？私はあの日以来、新しい心持ちで生活しています。"
+            }
+        },
+        {
+            "index": 8,
+            "type": "Dialogue",
+            "speaker": "PROTAGONIST",
+            "text": {
+                "Korean": "다행히 무사해서 정말 다행이에요.",
+                "English": "I'm so glad you're safe.",
+                "Japanese": "無事で本当に良かったです。"
+            }
+        },
+        {
+            "index": 9,
+            "type": "Dialogue",
+            "speaker": "HEROINE_ARIA",
+            "text": {
+                "Korean": "당신 덕분이에요. 정말 고마워요.",
+                "English": "It's thanks to you. Thank you so much.",
+                "Japanese": "あなたのおかげです。本当にありがとうございます。"
+            },
+            "effects": [
+                {
+                    "type": "relationship",
+                    "action": "increase",
+                    "target": "HEROINE_ARIA",
+                    "amount": 5,
+                    "silent": true
+                }
+            ]
+        },
+        {
+            "index": 12,
+            "type": "Dialogue",
+            "speaker": "HEROINE_ARIA",
+            "text": {
+                "Korean": "와! 꽃다발이에요! 정말 예뻐요! 감사합니다!",
+                "English": "Wow! A bouquet! It's so beautiful! Thank you!",
+                "Japanese": "わあ！花束ですね！とても綺麗です！ありがとうございます！"
+            },
+            "effects": [
+                {
+                    "type": "relationship",
+                    "action": "increase",
+                    "target": "HEROINE_ARIA",
+                    "amount": 15,
+                    "message": {
+                        "Korean": "아리아가 당신을 더욱 좋아하게 되었습니다!",
+                        "English": "Aria likes you even more now!",
+                        "Japanese": "アリアがあなたをより好きになりました！"
+                    }
+                },
+                {
+                    "type": "flag",
+                    "action": "set",
+                    "target": "aria_gift_given",
+                    "amount": 1
+                }
+            ]
+        }
+    ]
+}

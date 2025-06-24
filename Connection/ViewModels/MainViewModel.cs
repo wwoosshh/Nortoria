@@ -57,7 +57,7 @@ namespace Connection.ViewModels
         public string ContinueButtonText => LocalizationHelper.GetLocalizedString("Continue", _currentLanguage);
         public string SettingsButtonText => LocalizationHelper.GetLocalizedString("Settings", _currentLanguage);
         public string ExitButtonText => LocalizationHelper.GetLocalizedString("Exit", _currentLanguage);
-        public string VersionText => "Connection v1.0.0";
+        public string VersionText => "Connect Beta v1.0.2";
 
         #endregion
 
