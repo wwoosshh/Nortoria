@@ -736,15 +736,31 @@ namespace Connection.ViewModels
             if (Path.IsPathRooted(relativePath))
                 return relativePath;
 
-            // 상대 경로를 절대 경로로 변환
-            var fullPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "Images", relativePath);
+            // 여러 경로에서 파일 찾기
+            string[] searchPaths = {
+                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "Images", relativePath),
+                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", relativePath),
+                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "Images", "backgrounds", relativePath),
+                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "backgrounds", relativePath)
+            };
 
-            // 파일이 존재하는지 확인
-            if (File.Exists(fullPath))
-                return fullPath;
+            foreach (string fullPath in searchPaths)
+            {
+                if (File.Exists(fullPath))
+                {
+                    Console.WriteLine($"이미지 파일 발견: {fullPath}");
+                    return fullPath;
+                }
+            }
 
-            // 파일이 없는 경우 기본 이미지 또는 null 반환
-            Console.WriteLine($"이미지 파일을 찾을 수 없습니다: {fullPath}");
+            // 파일을 찾을 수 없는 경우
+            Console.WriteLine($"이미지 파일을 찾을 수 없습니다: {relativePath}");
+            Console.WriteLine("다음 경로들을 확인했습니다:");
+            foreach (string path in searchPaths)
+            {
+                Console.WriteLine($"  - {path}");
+            }
+
             return null;
         }
 

@@ -9,8 +9,8 @@
 
 		<AssemblyTitle>Connection</AssemblyTitle>
 		<AssemblyDescription>Connection Visual Novel Game</AssemblyDescription>
-		<AssemblyVersion>1.0.0.0</AssemblyVersion>
-		<FileVersion>1.0.0.0</FileVersion>
+		<AssemblyVersion>1.0.3.0</AssemblyVersion>
+		<FileVersion>1.0.3.0</FileVersion>
 		<Company>Connection Team</Company>
 		<Product>Connection</Product>
 		<Copyright>© 2025 Connection Team</Copyright>
@@ -21,16 +21,31 @@
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	</ItemGroup>
 
+	<!-- 이미지 리소스를 프로젝트에 포함 (빌드 시 어셈블리에 임베드) -->
 	<ItemGroup>
-		<Folder Include="Resources\Images\" />
+    		<Resource Include="Resources\Images\**\*" />
+	</ItemGroup>
+
+	<!-- 스크립트와 오디오는 출력 디렉토리에 복사 -->
+	<ItemGroup>
+		<None Update="Resources\Scripts\**\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Audio\**\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="Resources\Localization\**\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
 		<Folder Include="Resources\Audio\" />
 		<Folder Include="Resources\Localization\" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Update="Resources\**\*">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</None>
+  		<Resource Include="Resources\Images\backgrounds\burning_building.jpg" />
 	</ItemGroup>
 
 </Project>

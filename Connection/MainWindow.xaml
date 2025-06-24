@@ -5,47 +5,243 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         Title="Connection" 
-        Height="614" 
-        Width="819"
-        MinHeight="600"
-        MinWidth="800"
+        Height="1080" 
+        Width="1920"
+        MinHeight="720"
+        MinWidth="1280"
         WindowStartupLocation="CenterScreen"
-        Background="Black">
+        Background="Black"
+        ResizeMode="NoResize"
+        WindowState="Normal">
 
     <Window.Resources>
-        <!-- 메인 버튼 스타일 -->
-        <Style x:Key="MainMenuButtonStyle" TargetType="Button">
-            <Setter Property="Width" Value="300"/>
-            <Setter Property="Height" Value="60"/>
-            <Setter Property="Margin" Value="0,10"/>
-            <Setter Property="FontSize" Value="20"/>
+        <!-- 파티클 효과를 위한 스타일 -->
+        <Style x:Key="ParticleStyle" TargetType="Ellipse">
+            <Setter Property="Fill" Value="#40FFFFFF"/>
+            <Setter Property="Width" Value="3"/>
+            <Setter Property="Height" Value="3"/>
+            <Setter Property="Opacity" Value="0"/>
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard RepeatBehavior="Forever">
+                            <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                           From="0" To="1" Duration="0:0:2"
+                                           AutoReverse="True"/>
+                            <DoubleAnimation Storyboard.TargetProperty="(Canvas.Top)"
+                                           From="600" To="-50" Duration="0:0:8"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- 로고 글로우 효과 스타일 -->
+        <Style x:Key="LogoGlowStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="64"/>
             <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="Background" Value="#2C3E50"/>
+            <Setter Property="Foreground">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#FF6B73" Offset="0"/>
+                        <GradientStop Color="#009FFF" Offset="0.5"/>
+                        <GradientStop Color="#EC2F4B" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <BlurEffect Radius="15"/>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard RepeatBehavior="Forever">
+                            <DoubleAnimation Storyboard.TargetProperty="(Effect).Radius"
+                                           From="12" To="20" Duration="0:0:3"
+                                           AutoReverse="True"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- 타이틀 텍스트 스타일 -->
+        <Style x:Key="TitleTextStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="64"/>
+            <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Foreground" Value="White"/>
-            <Setter Property="BorderBrush" Value="#34495E"/>
-            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="#009FFF" 
+                                    BlurRadius="12" 
+                                    ShadowDepth="0" 
+                                    Opacity="0.8"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- 기본 유리 버튼 스타일 -->
+        <Style x:Key="GlassButtonStyle" TargetType="Button">
+            <Setter Property="Width" Value="320"/>
+            <Setter Property="Height" Value="70"/>
+            <Setter Property="Margin" Value="0,15"/>
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="White"/>
             <Setter Property="Cursor" Value="Hand"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}"
-                                BorderBrush="{TemplateBinding BorderBrush}"
-                                BorderThickness="{TemplateBinding BorderThickness}"
-                                CornerRadius="5">
-                            <ContentPresenter HorizontalAlignment="Center"
-                                            VerticalAlignment="Center"/>
-                        </Border>
+                        <Grid>
+                            <!-- 그림자 레이어 -->
+                            <Border x:Name="ShadowBorder"
+                                    CornerRadius="8"
+                                    Margin="0,2,0,0">
+                                <Border.Background>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                        <GradientStop Color="#40000000" Offset="0"/>
+                                        <GradientStop Color="#80000000" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                                <Border.Effect>
+                                    <BlurEffect Radius="8"/>
+                                </Border.Effect>
+                            </Border>
+
+                            <!-- 메인 유리 버튼 -->
+                            <Border x:Name="MainBorder"
+                                    CornerRadius="8"
+                                    BorderThickness="1">
+                                <!-- 유리 배경 -->
+                                <Border.Background>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" Opacity="0.15">
+                                        <GradientStop Color="#FFFFFF" Offset="0"/>
+                                        <GradientStop Color="#80FFFFFF" Offset="0.5"/>
+                                        <GradientStop Color="#40FFFFFF" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Border.Background>
+
+                                <!-- 유리 테두리 -->
+                                <Border.BorderBrush>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                        <GradientStop Color="#80FFFFFF" Offset="0"/>
+                                        <GradientStop Color="#40FFFFFF" Offset="0.5"/>
+                                        <GradientStop Color="#20FFFFFF" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Border.BorderBrush>
+
+                                <Grid>
+                                    <!-- 상단 하이라이트 (유리 반사) -->
+                                    <Border CornerRadius="8,8,0,0" Height="20" VerticalAlignment="Top">
+                                        <Border.Background>
+                                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                                <GradientStop Color="#60FFFFFF" Offset="0"/>
+                                                <GradientStop Color="#00FFFFFF" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </Border.Background>
+                                    </Border>
+
+                                    <!-- 각진 크랙 효과 -->
+                                    <Canvas>
+                                        <!-- 왼쪽 상단 각진 라인 -->
+                                        <Line X1="20" Y1="15" X2="60" Y2="25" 
+                                              Stroke="#40FFFFFF" StrokeThickness="1"/>
+                                        <Line X1="60" Y1="25" X2="45" Y2="35" 
+                                              Stroke="#30FFFFFF" StrokeThickness="0.5"/>
+
+                                        <!-- 오른쪽 하단 각진 라인 -->
+                                        <Line X1="260" Y1="45" X2="300" Y2="55" 
+                                              Stroke="#40FFFFFF" StrokeThickness="1"/>
+                                        <Line X1="280" Y1="40" X2="310" Y2="50" 
+                                              Stroke="#30FFFFFF" StrokeThickness="0.5"/>
+                                    </Canvas>
+
+                                    <!-- 텍스트 컨텐츠 -->
+                                    <ContentPresenter HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    TextBlock.FontWeight="Bold">
+                                        <ContentPresenter.Effect>
+                                            <DropShadowEffect Color="Black" BlurRadius="2" ShadowDepth="1" Opacity="0.8"/>
+                                        </ContentPresenter.Effect>
+                                    </ContentPresenter>
+
+                                    <!-- 글로우 오버레이 (호버용) -->
+                                    <Border x:Name="GlowOverlay" 
+                                            CornerRadius="8"
+                                            Opacity="0">
+                                        <Border.Background>
+                                            <RadialGradientBrush>
+                                                <GradientStop Color="#4000FFFF" Offset="0"/>
+                                                <GradientStop Color="#1000FFFF" Offset="0.7"/>
+                                                <GradientStop Color="#00000000" Offset="1"/>
+                                            </RadialGradientBrush>
+                                        </Border.Background>
+                                    </Border>
+                                </Grid>
+                            </Border>
+                        </Grid>
+
                         <ControlTemplate.Triggers>
+                            <!-- 마우스 오버 효과 -->
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#34495E"/>
-                                <Setter Property="BorderBrush" Value="#3498DB"/>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation Storyboard.TargetName="GlowOverlay"
+                                                           Storyboard.TargetProperty="Opacity"
+                                                           To="1" Duration="0:0:0.3"/>
+                                            <DoubleAnimation Storyboard.TargetName="MainBorder"
+                                                           Storyboard.TargetProperty="(Border.Background).(LinearGradientBrush.Opacity)"
+                                                           To="0.25" Duration="0:0:0.3"/>
+                                            <ColorAnimation Storyboard.TargetName="MainBorder"
+                                                          Storyboard.TargetProperty="(Border.BorderBrush).(LinearGradientBrush.GradientStops)[0].(GradientStop.Color)"
+                                                          To="#A000FFFF" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation Storyboard.TargetName="GlowOverlay"
+                                                           Storyboard.TargetProperty="Opacity"
+                                                           To="0" Duration="0:0:0.3"/>
+                                            <DoubleAnimation Storyboard.TargetName="MainBorder"
+                                                           Storyboard.TargetProperty="(Border.Background).(LinearGradientBrush.Opacity)"
+                                                           To="0.15" Duration="0:0:0.3"/>
+                                            <ColorAnimation Storyboard.TargetName="MainBorder"
+                                                          Storyboard.TargetProperty="(Border.BorderBrush).(LinearGradientBrush.GradientStops)[0].(GradientStop.Color)"
+                                                          To="#80FFFFFF" Duration="0:0:0.3"/>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
                             </Trigger>
+
+                            <!-- 클릭 효과 -->
                             <Trigger Property="IsPressed" Value="True">
-                                <Setter Property="Background" Value="#1ABC9C"/>
+                                <Setter TargetName="MainBorder" Property="Background">
+                                    <Setter.Value>
+                                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" Opacity="0.3">
+                                            <GradientStop Color="#FFFFFF" Offset="0"/>
+                                            <GradientStop Color="#A0FFFFFF" Offset="0.5"/>
+                                            <GradientStop Color="#60FFFFFF" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                                <Setter TargetName="MainBorder" Property="RenderTransform">
+                                    <Setter.Value>
+                                        <ScaleTransform ScaleX="0.98" ScaleY="0.98"/>
+                                    </Setter.Value>
+                                </Setter>
                             </Trigger>
+
+                            <!-- 비활성화 상태 -->
                             <Trigger Property="IsEnabled" Value="False">
-                                <Setter Property="Background" Value="#7F8C8D"/>
-                                <Setter Property="Foreground" Value="#BDC3C7"/>
+                                <Setter TargetName="MainBorder" Property="Opacity" Value="0.4"/>
+                                <Setter Property="Foreground" Value="#80FFFFFF"/>
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
@@ -53,88 +249,179 @@
             </Setter>
         </Style>
 
-        <!-- 타이틀 스타일 -->
-        <Style x:Key="TitleStyle" TargetType="TextBlock">
-            <Setter Property="FontSize" Value="72"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
+        <!-- 하단 정보 텍스트 스타일 -->
+        <Style x:Key="InfoTextStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#BDC3C7"/>
+            <Setter Property="FontSize" Value="14"/>
             <Setter Property="Effect">
                 <Setter.Value>
-                    <DropShadowEffect Color="Blue" 
-                                    BlurRadius="10" 
-                                    ShadowDepth="3" 
-                                    Opacity="0.7"/>
+                    <DropShadowEffect Color="Black" BlurRadius="3" ShadowDepth="1"/>
                 </Setter.Value>
             </Setter>
         </Style>
     </Window.Resources>
 
     <Grid>
+        <!-- 메인 배경 -->
         <Grid.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                 <GradientStop Color="#0F0F23" Offset="0"/>
-                <GradientStop Color="#1A1A2E" Offset="0.5"/>
-                <GradientStop Color="#16213E" Offset="1"/>
+                <GradientStop Color="#1A1A2E" Offset="0.3"/>
+                <GradientStop Color="#16213E" Offset="0.7"/>
+                <GradientStop Color="#0F3460" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+        <!-- 배경 이미지 (수정된 경로) -->
+        <Image x:Name="BackgroundImage"
+               Source="/Resources/Images/main_background.png"
+               Stretch="UniformToFill"
+               Opacity="0.3"
+               Panel.ZIndex="0">
+            <Image.Effect>
+                <BlurEffect Radius="2"/>
+            </Image.Effect>
+        </Image>
 
-        <!-- 타이틀 -->
-        <TextBlock Grid.Row="0" 
-                   Text="Connection"
-                   Style="{StaticResource TitleStyle}"
-                   VerticalAlignment="Bottom"
-                   Margin="0,0,0,50"/>
+        <!-- 파티클 효과 캔버스 -->
+        <Canvas x:Name="ParticleCanvas" Panel.ZIndex="1">
+            <!-- 파티클들 - 코드비하인드에서 동적 생성하거나 여기에 수동으로 추가 -->
+            <Ellipse Style="{StaticResource ParticleStyle}" Canvas.Left="100" Canvas.Top="600"/>
+            <Ellipse Style="{StaticResource ParticleStyle}" Canvas.Left="200" Canvas.Top="600"/>
+            <Ellipse Style="{StaticResource ParticleStyle}" Canvas.Left="300" Canvas.Top="600"/>
+            <Ellipse Style="{StaticResource ParticleStyle}" Canvas.Left="400" Canvas.Top="600"/>
+            <Ellipse Style="{StaticResource ParticleStyle}" Canvas.Left="500" Canvas.Top="600"/>
+            <Ellipse Style="{StaticResource ParticleStyle}" Canvas.Left="600" Canvas.Top="600"/>
+            <Ellipse Style="{StaticResource ParticleStyle}" Canvas.Left="700" Canvas.Top="600"/>
+        </Canvas>
 
-        <!-- 메뉴 버튼들 -->
-        <StackPanel Grid.Row="1" 
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center">
+        <!-- 오버레이 그라디언트 -->
+        <Rectangle Panel.ZIndex="2">
+            <Rectangle.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#00000000" Offset="0.3"/>
+                    <GradientStop Color="#40000000" Offset="0.8"/>
+                    <GradientStop Color="#80000000" Offset="1"/>
+                </RadialGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
 
-            <Button Style="{StaticResource MainMenuButtonStyle}"
-                    Content="{Binding NewGameButtonText}"
-                    Command="{Binding NewGameCommand}"/>
+        <!-- 메인 컨텐츠 -->
+        <Grid Panel.ZIndex="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.3*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-            <Button Style="{StaticResource MainMenuButtonStyle}"
-                    Content="{Binding ContinueButtonText}"
-                    Command="{Binding ContinueGameCommand}"
-                    IsEnabled="{Binding CanContinueGame}"/>
+            <!-- 로고 영역 (더 안정적인 위치) -->
+            <Viewbox Grid.Row="1" 
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                     MaxHeight="100"
+                     MaxWidth="600"
+                     Margin="20">
+                <Grid>
+                    <!-- 글로우 효과 -->
+                    <TextBlock Text="Connection"
+                               Style="{StaticResource LogoGlowStyle}"/>
 
-            <Button Style="{StaticResource MainMenuButtonStyle}"
-                    Content="{Binding SettingsButtonText}"
-                    Command="{Binding ShowSettingsCommand}"/>
+                    <!-- 실제 텍스트 -->
+                    <TextBlock Text="Connection"
+                               Style="{StaticResource TitleTextStyle}"/>
+                </Grid>
+            </Viewbox>
 
-            <Button Style="{StaticResource MainMenuButtonStyle}"
-                    Content="{Binding ExitButtonText}"
-                    Command="{Binding ExitGameCommand}"/>
-        </StackPanel>
+            <!-- 메뉴 버튼들 (중앙에 더 안정적으로 배치) -->
+            <StackPanel Grid.Row="2" 
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Margin="0,40,0,0">
 
-        <!-- 하단 정보 -->
-        <Grid Grid.Row="2" VerticalAlignment="Bottom" Margin="20">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+                <Button Style="{StaticResource GlassButtonStyle}"
+                        Content="{Binding NewGameButtonText}"
+                        Command="{Binding NewGameCommand}">
+                    <Button.RenderTransform>
+                        <ScaleTransform/>
+                    </Button.RenderTransform>
+                </Button>
 
-            <TextBlock Grid.Column="0"
-                       Text="{Binding VersionText}"
-                       Foreground="Gray"
-                       FontSize="12"
-                       HorizontalAlignment="Left"
-                       VerticalAlignment="Bottom"/>
+                <Button Style="{StaticResource GlassButtonStyle}"
+                        Content="{Binding ContinueButtonText}"
+                        Command="{Binding ContinueGameCommand}"
+                        IsEnabled="{Binding CanContinueGame}">
+                    <Button.RenderTransform>
+                        <ScaleTransform/>
+                    </Button.RenderTransform>
+                </Button>
 
-            <TextBlock Grid.Column="1"
-                       Text="{Binding LastPlayTimeText}"
-                       Foreground="Gray"
-                       FontSize="12"
-                       HorizontalAlignment="Right"
-                       VerticalAlignment="Bottom"/>
+                <Button Style="{StaticResource GlassButtonStyle}"
+                        Content="{Binding SettingsButtonText}"
+                        Command="{Binding ShowSettingsCommand}">
+                    <Button.RenderTransform>
+                        <ScaleTransform/>
+                    </Button.RenderTransform>
+                </Button>
+
+                <Button Style="{StaticResource GlassButtonStyle}"
+                        Content="{Binding ExitButtonText}"
+                        Command="{Binding ExitGameCommand}">
+                    <Button.RenderTransform>
+                        <ScaleTransform/>
+                    </Button.RenderTransform>
+                </Button>
+            </StackPanel>
+
+            <!-- 하단 정보 (고정 위치) -->
+            <Grid Grid.Row="4" 
+                  Margin="30,0,30,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0"
+                           Text="{Binding VersionText}"
+                           Style="{StaticResource InfoTextStyle}"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Bottom"/>
+
+                <TextBlock Grid.Column="1"
+                           Text="{Binding LastPlayTimeText}"
+                           Style="{StaticResource InfoTextStyle}"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Bottom"/>
+            </Grid>
         </Grid>
+
+        <!-- 추가 시각 효과들 -->
+        <Canvas Panel.ZIndex="4" IsHitTestVisible="False">
+            <!-- 상단 빛 효과 -->
+            <Rectangle Width="400" Height="2" Canvas.Left="200" Canvas.Top="50">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop Color="#00FFFFFF" Offset="0"/>
+                        <GradientStop Color="#80FFFFFF" Offset="0.5"/>
+                        <GradientStop Color="#00FFFFFF" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+                <Rectangle.RenderTransform>
+                    <TranslateTransform x:Name="LightEffect"/>
+                </Rectangle.RenderTransform>
+                <Rectangle.Triggers>
+                    <EventTrigger RoutedEvent="Loaded">
+                        <BeginStoryboard>
+                            <Storyboard RepeatBehavior="Forever">
+                                <DoubleAnimation Storyboard.TargetName="LightEffect"
+                                               Storyboard.TargetProperty="X"
+                                               From="-400" To="800" Duration="0:0:4"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Rectangle.Triggers>
+            </Rectangle>
+        </Canvas>
     </Grid>
 </Window>

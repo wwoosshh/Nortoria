@@ -11,40 +11,21 @@
             "index": 1,
             "type": "Narration",
             "text": {
-                "Korean": "건물에서 불길이 치솟고 있다. 안에서 누군가의 비명소리가 들린다.",
-                "English": "Flames are rising from the building. Someone's screams can be heard from inside.",
-                "Japanese": "建物から炎が立ち上っている。中から誰かの悲鳴が聞こえる。"
+                "Korean": "테스트 스크립트 입니다.",
+                "English": "Test English Script",
+                "Japanese": "Test Japanese Script"
             }
         },
         {
             "index": 2,
-            "type": "Dialogue",
-            "speaker": "HEROINE_ARIA",
-            "text": {
-                "Korean": "도와주세요! 누구든지 도와주세요!",
-                "English": "Help me! Someone please help me!",
-                "Japanese": "助けてください！誰か助けてください！"
-            }
-        },
-        {
-            "index": 3,
-            "type": "Narration",
-            "text": {
-                "Korean": "아리아의 목소리다. 그녀가 위험에 빠져있다. 어떻게 할 것인가?",
-                "English": "It's Aria's voice. She's in danger. What will you do?",
-                "Japanese": "アリアの声だ。彼女が危険に陥っている。どうするか？"
-            }
-        },
-        {
-            "index": 4,
             "type": "Choice",
             "choices": [
                 {
                     "id": "save_aria",
                     "text": {
-                        "Korean": "위험을 무릅쓰고 아리아를 구하러 간다",
-                        "English": "Risk everything to save Aria",
-                        "Japanese": "危険を冒してアリアを助けに行く"
+                        "Korean": "1번 선택지",
+                        "English": "1st",
+                        "Japanese": "1"
                     },
                     "nextScriptIndex": 5,
                     "effects": [
@@ -54,9 +35,9 @@
                             "target": "HEROINE_ARIA",
                             "amount": 1,
                             "message": {
-                                "Korean": "아리아를 구했습니다!",
-                                "English": "You saved Aria!",
-                                "Japanese": "アリアを救いました！"
+                                "Korean": "1번 선택지입니다.",
+                                "English": "Its 1st type",
+                                "Japanese": "Its 1 type"
                             }
                         },
                         {
@@ -66,9 +47,9 @@
                             "amount": 50,
                             "silent": false,
                             "message": {
-                                "Korean": "아리아가 당신에게 깊은 감사를 표합니다.",
-                                "English": "Aria expresses deep gratitude to you.",
-                                "Japanese": "アリアがあなたに深い感謝を示します。"
+                                "Korean": "111111111",
+                                "English": "111111111",
+                                "Japanese": "111111111"
                             }
                         },
                         {
@@ -88,9 +69,9 @@
                 {
                     "id": "abandon_aria",
                     "text": {
-                        "Korean": "너무 위험하다. 다른 방법을 찾는다",
-                        "English": "It's too dangerous. Look for another way",
-                        "Japanese": "危険すぎる。別の方法を探す"
+                        "Korean": "2번 선택지",
+                        "English": "2nd",
+                        "Japanese": "2"
                     },
                     "nextScriptIndex": 10,
                     "effects": [
@@ -100,9 +81,9 @@
                             "target": "HEROINE_ARIA",
                             "amount": 0,
                             "message": {
-                                "Korean": "아리아를 구하지 못했습니다...",
-                                "English": "You couldn't save Aria...",
-                                "Japanese": "アリアを救えませんでした..."
+                                "Korean": "2번 선택지 입니다.",
+                                "English": "2nd",
+                                "Japanese": "2"
                             }
                         },
                         {
@@ -122,9 +103,9 @@
                 {
                     "id": "call_firefighters",
                     "text": {
-                        "Korean": "소방서에 신고한다",
-                        "English": "Call the fire department",
-                        "Japanese": "消防署に通報する"
+                        "Korean": "3번 선택지",
+                        "English": "3",
+                        "Japanese": "3"
                     },
                     "nextScriptIndex": 15,
                     "displayConditions": [
@@ -143,9 +124,9 @@
                             "amount": 1,
                             "probability": 0.7,
                             "message": {
-                                "Korean": "소방관들이 아리아를 구했습니다!",
-                                "English": "The firefighters saved Aria!",
-                                "Japanese": "消防士がアリアを救いました！"
+                                "Korean": "3번 선택지 입니다.",
+                                "English": "3",
+                                "Japanese": "3"
                             }
                         },
                         {
@@ -163,165 +144,6 @@
                     ]
                 }
             ]
-        },
-        {
-            "index": 5,
-            "type": "Narration",
-            "text": {
-                "Korean": "당신은 불길을 뚫고 건물 안으로 뛰어들었다.",
-                "English": "You rush into the building through the flames.",
-                "Japanese": "あなたは炎を突き抜けて建物の中に飛び込んだ。"
-            }
-        },
-        {
-            "index": 6,
-            "type": "Dialogue",
-            "speaker": "HEROINE_ARIA",
-            "text": {
-                "Korean": "당신... 정말 와주셨군요! 감사합니다!",
-                "English": "You... you really came! Thank you!",
-                "Japanese": "あなた...本当に来てくれたんですね！ありがとうございます！"
-            }
-        },
-        {
-            "index": 7,
-            "type": "Narration",
-            "text": {
-                "Korean": "아리아의 눈에 눈물이 고였다. 당신은 그녀를 안전한 곳으로 데려갔다.",
-                "English": "Tears welled up in Aria's eyes. You carried her to safety.",
-                "Japanese": "アリアの目に涙がたまった。あなたは彼女を安全な場所に連れて行った。"
-            }
-        },
-        {
-            "index": 8,
-            "type": "Dialogue",
-            "speaker": "HEROINE_ARIA",
-            "text": {
-                "Korean": "당신이 아니었다면... 정말 고마워요. 평생 잊지 않을게요.",
-                "English": "If it weren't for you... Thank you so much. I'll never forget this.",
-                "Japanese": "あなたがいなかったら...本当にありがとうございます。一生忘れません。"
-            }
-        },
-        {
-            "index": 9,
-            "type": "Narration",
-            "text": {
-                "Korean": "이 선택이 앞으로 어떤 결과를 가져올지는 아직 모른다.",
-                "English": "You don't know yet what consequences this choice will bring.",
-                "Japanese": "この選択が今後どのような結果をもたらすかはまだ分からない。"
-            }
-        },
-        {
-            "index": 10,
-            "type": "Narration",
-            "text": {
-                "Korean": "당신은 다른 방법을 찾기로 했지만... 시간이 부족했다.",
-                "English": "You decided to look for another way, but... there wasn't enough time.",
-                "Japanese": "あなたは別の方法を探すことにしたが...時間が足りなかった。"
-            }
-        },
-        {
-            "index": 11,
-            "type": "Narration",
-            "text": {
-                "Korean": "건물이 무너져내렸다. 아리아의 비명소리는 더 이상 들리지 않았다.",
-                "English": "The building collapsed. Aria's screams could no longer be heard.",
-                "Japanese": "建物が崩れ落ちた。アリアの悲鳴はもう聞こえなかった。"
-            }
-        },
-        {
-            "index": 12,
-            "type": "Dialogue",
-            "speaker": "PROTAGONIST",
-            "text": {
-                "Korean": "내가... 내가 구할 수 있었는데...",
-                "English": "I... I could have saved her...",
-                "Japanese": "私が...私が救えたのに..."
-            }
-        },
-        {
-            "index": 13,
-            "type": "Narration",
-            "text": {
-                "Korean": "후회가 밀려왔다. 이 죄책감은 오래갈 것 같다.",
-                "English": "Regret washed over you. This guilt will likely last a long time.",
-                "Japanese": "後悔が押し寄せた。この罪悪感は長く続きそうだ。"
-            }
-        },
-        {
-            "index": 15,
-            "type": "Narration",
-            "text": {
-                "Korean": "당신은 재빨리 소방서에 신고했다.",
-                "English": "You quickly called the fire department.",
-                "Japanese": "あなたは素早く消防署に通報した。"
-            }
-        },
-        {
-            "index": 16,
-            "type": "Narration",
-            "text": {
-                "Korean": "몇 분 후, 소방차 사이렌 소리가 들려왔다.",
-                "English": "A few minutes later, fire truck sirens could be heard.",
-                "Japanese": "数分後、消防車のサイレンが聞こえてきた。"
-            }
-        },
-        {
-            "index": 17,
-            "type": "Conditional",
-            "conditions": [
-                {
-                    "type": "character_alive",
-                    "target": "HEROINE_ARIA",
-                    "operator": "true",
-                    "value": "1"
-                }
-            ],
-            "effects": []
-        },
-        {
-            "index": 18,
-            "type": "Dialogue",
-            "speaker": "HEROINE_ARIA",
-            "text": {
-                "Korean": "소방관분들이 구해주셨어요! 신고해주셔서 감사합니다!",
-                "English": "The firefighters saved me! Thank you for calling them!",
-                "Japanese": "消防士の方々が救ってくださいました！通報してくださってありがとうございます！"
-            },
-            "conditions": [
-                {
-                    "type": "character_alive",
-                    "target": "HEROINE_ARIA",
-                    "operator": "true",
-                    "value": "1"
-                }
-            ]
-        },
-        {
-            "index": 19,
-            "type": "Narration",
-            "text": {
-                "Korean": "하지만 소방관들이 도착했을 때는 이미 늦었다...",
-                "English": "But when the firefighters arrived, it was already too late...",
-                "Japanese": "しかし消防士が到着した時にはすでに遅すぎた..."
-            },
-            "conditions": [
-                {
-                    "type": "character_alive",
-                    "target": "HEROINE_ARIA",
-                    "operator": "false",
-                    "value": "1"
-                }
-            ]
-        },
-        {
-            "index": 20,
-            "type": "Narration",
-            "text": {
-                "Korean": "이 사건은 당신의 마음에 깊은 상처를 남겼다.",
-                "English": "This incident left deep scars in your heart.",
-                "Japanese": "この事件はあなたの心に深い傷を残した。"
-            }
         }
     ]
 }

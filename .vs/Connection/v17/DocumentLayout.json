@@ -7,16 +7,24 @@
       "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\viewmodels\\gameviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\viewmodels\\inventoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\viewmodels\\inventoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\resources\\scripts\\chapter1_episode1.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\resources\\scripts\\chapter1_episode1.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\views\\gamewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\views\\gamewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\resources\\scripts\\chapter1_episode2.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\resources\\scripts\\chapter1_episode2.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\resources\\scripts\\chapters.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\resources\\scripts\\chapters.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,6 +33,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\viewmodels\\inventoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\viewmodels\\inventoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -37,14 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\services\\storyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\services\\storyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\resources\\scripts\\chapters.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\resources\\scripts\\chapters.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\resources\\scripts\\chapter1_episode2.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\resources\\scripts\\chapter1_episode2.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\views\\inventorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -81,10 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\utils\\localizationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\utils\\localizationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\views\\gamewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|solutionrelative:connection\\views\\gamewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC630B00-83BC-4FEF-AD34-A72F9CCCC388}|Connection\\Connection.csproj|c:\\users\\user\\source\\repos\\connection\\connection\\viewmodels\\settingsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -130,54 +130,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "chapters.json",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Resources\\Scripts\\chapters.json",
-              "RelativeDocumentMoniker": "Connection\\Resources\\Scripts\\chapters.json",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Resources\\Scripts\\chapters.json",
-              "RelativeToolTip": "Connection\\Resources\\Scripts\\chapters.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-21T05:41:21.29Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Connection\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\MainWindow.xaml",
-              "RelativeToolTip": "Connection\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-20T08:02:51.445Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Connection\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Connection\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T08:02:51.051Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "InventoryWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\InventoryWindow.xaml",
-              "RelativeDocumentMoniker": "Connection\\Views\\InventoryWindow.xaml",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\InventoryWindow.xaml",
-              "RelativeToolTip": "Connection\\Views\\InventoryWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-22T13:18:58.518Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -186,14 +140,14 @@
               "RelativeDocumentMoniker": "Connection\\ViewModels\\MainViewModel.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\ViewModels\\MainViewModel.cs",
               "RelativeToolTip": "Connection\\ViewModels\\MainViewModel.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAAADsAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAmwNwAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T08:07:36.13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Connection\\Views\\MainWindow.xaml.cs",
@@ -205,13 +159,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Chapter1_Episode1.json",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Resources\\Scripts\\Chapter1_Episode1.json",
               "RelativeDocumentMoniker": "Connection\\Resources\\Scripts\\Chapter1_Episode1.json",
               "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Resources\\Scripts\\Chapter1_Episode1.json",
               "RelativeToolTip": "Connection\\Resources\\Scripts\\Chapter1_Episode1.json",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABUAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-06-21T05:41:28.303Z",
               "EditorCaption": ""
@@ -224,14 +178,14 @@
               "RelativeDocumentMoniker": "Connection\\ViewModels\\GameViewModel.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\ViewModels\\GameViewModel.cs",
               "RelativeToolTip": "Connection\\ViewModels\\GameViewModel.cs",
-              "ViewState": "AgIAAIAAAAAAAAAAAAAIwIwEAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAANMCAAAAAAAAAAAmwO0CAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T08:07:40.494Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "InventoryViewModel.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\ViewModels\\InventoryViewModel.cs",
               "RelativeDocumentMoniker": "Connection\\ViewModels\\InventoryViewModel.cs",
@@ -239,12 +193,86 @@
               "RelativeToolTip": "Connection\\ViewModels\\InventoryViewModel.cs",
               "ViewState": "AgIAAIYAAAAAAAAAAAAwwJgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T13:19:38.145Z",
+              "WhenOpened": "2025-06-22T13:19:38.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Chapter1_Episode2.json",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Resources\\Scripts\\Chapter1_Episode2.json",
+              "RelativeDocumentMoniker": "Connection\\Resources\\Scripts\\Chapter1_Episode2.json",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Resources\\Scripts\\Chapter1_Episode2.json",
+              "RelativeToolTip": "Connection\\Resources\\Scripts\\Chapter1_Episode2.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-22T13:54:22.104Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "chapters.json",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Resources\\Scripts\\chapters.json",
+              "RelativeDocumentMoniker": "Connection\\Resources\\Scripts\\chapters.json",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Resources\\Scripts\\chapters.json",
+              "RelativeToolTip": "Connection\\Resources\\Scripts\\chapters.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-21T05:41:21.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\GameWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Connection\\Views\\GameWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\GameWindow.xaml.cs",
+              "RelativeToolTip": "Connection\\Views\\GameWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwCwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T08:13:14.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "InventoryWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\InventoryWindow.xaml",
+              "RelativeDocumentMoniker": "Connection\\Views\\InventoryWindow.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\InventoryWindow.xaml",
+              "RelativeToolTip": "Connection\\Views\\InventoryWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-22T13:18:58.518Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Connection\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Connection\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAFoBAAAAAAAAAAAUwHABAAB9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T08:02:51.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Connection\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\MainWindow.xaml",
+              "RelativeToolTip": "Connection\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-20T08:02:51.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Connection\\Views\\MainWindow.xaml",
@@ -255,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "StoryService.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Services\\StoryService.cs",
               "RelativeDocumentMoniker": "Connection\\Services\\StoryService.cs",
@@ -267,19 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Chapter1_Episode2.json",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Resources\\Scripts\\Chapter1_Episode2.json",
-              "RelativeDocumentMoniker": "Connection\\Resources\\Scripts\\Chapter1_Episode2.json",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Resources\\Scripts\\Chapter1_Episode2.json",
-              "RelativeToolTip": "Connection\\Resources\\Scripts\\Chapter1_Episode2.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-22T13:54:22.104Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "UserData.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Models\\UserData.cs",
               "RelativeDocumentMoniker": "Connection\\Models\\UserData.cs",
@@ -291,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "InventoryWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\InventoryWindow.xaml.cs",
               "RelativeDocumentMoniker": "Connection\\Views\\InventoryWindow.xaml.cs",
@@ -303,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ScriptData.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Models\\ScriptData.cs",
               "RelativeDocumentMoniker": "Connection\\Models\\ScriptData.cs",
@@ -315,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "StoryData.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Models\\StoryData.cs",
               "RelativeDocumentMoniker": "Connection\\Models\\StoryData.cs",
@@ -327,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "GameSettings.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Models\\GameSettings.cs",
               "RelativeDocumentMoniker": "Connection\\Models\\GameSettings.cs",
@@ -339,19 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "GameWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\GameWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Connection\\Views\\GameWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\GameWindow.xaml.cs",
-              "RelativeToolTip": "Connection\\Views\\GameWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAUwCwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T08:13:14.012Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "GameWindow.xaml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\GameWindow.xaml",
               "RelativeDocumentMoniker": "Connection\\Views\\GameWindow.xaml",
@@ -362,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "SettingsWindow.xaml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Views\\SettingsWindow.xaml",
               "RelativeDocumentMoniker": "Connection\\Views\\SettingsWindow.xaml",
@@ -385,7 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "LocalizationHelper.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\Utils\\LocalizationHelper.cs",
               "RelativeDocumentMoniker": "Connection\\Utils\\LocalizationHelper.cs",
@@ -476,7 +480,8 @@
               "ToolTip": "C:\\Users\\user\\source\\repos\\Connection\\Connection\\App.xaml",
               "RelativeToolTip": "Connection\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-20T08:18:31.551Z"
+              "WhenOpened": "2025-06-20T08:18:31.551Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -488,7 +493,8 @@
               "RelativeToolTip": "Connection\\Connection.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-20T08:20:05.237Z"
+              "WhenOpened": "2025-06-20T08:20:05.237Z",
+              "EditorCaption": ""
             }
           ]
         }
